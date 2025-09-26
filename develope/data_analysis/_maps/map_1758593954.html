@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d98e62f9339b766f001ce63a28141726 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d98e62f9339b766f001ce63a28141726" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d98e62f9339b766f001ce63a28141726 = L.map(
+                "map_d98e62f9339b766f001ce63a28141726",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f51009e740e298dd58f6a3852e4fa42 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6f51009e740e298dd58f6a3852e4fa42.addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+            var marker_43c1a3540be70f6668770ba6691f28b7 = L.marker(
+                [37.5665, 126.978],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+            var icon_5cf352ab6a25bd6b565024f79367227d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81e03de69c0486c4bf234bcd8935af48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebe510639258044d05eb89bbfa944eb9 = $(`<div id="html_ebe510639258044d05eb89bbfa944eb9" style="width: 100.0%; height: 100.0%;"><b>내 위치</b><br>서울 종로구 세종대로 110</div>`)[0];
+                popup_81e03de69c0486c4bf234bcd8935af48.setContent(html_ebe510639258044d05eb89bbfa944eb9);
+            
+        
+
+        marker_43c1a3540be70f6668770ba6691f28b7.bindPopup(popup_81e03de69c0486c4bf234bcd8935af48)
+        ;
+
+        
+    
+    
+                marker_43c1a3540be70f6668770ba6691f28b7.setIcon(icon_5cf352ab6a25bd6b565024f79367227d);
+            
+    
+            var marker_9c930f8347ea63472095fabfbc05aa05 = L.marker(
+                [37.5634929642429, 126.982583010911],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_ff4f6c52b8c8d879cc266ddd496034f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_19148e8fc8a2c734fbee9700f1d80a12 = $(`<div id="html_19148e8fc8a2c734fbee9700f1d80a12" style="width: 100.0%; height: 100.0%;"><b>CGV 명동</b><br>주소: 서울 중구 명동길 14<br>⭐ 정보 없음</div>`)[0];
+                popup_ff4f6c52b8c8d879cc266ddd496034f6.setContent(html_19148e8fc8a2c734fbee9700f1d80a12);
+            
+        
+
+        marker_9c930f8347ea63472095fabfbc05aa05.bindPopup(popup_ff4f6c52b8c8d879cc266ddd496034f6)
+        ;
+
+        
+    
+    
+            var marker_db0016073018caf4be7798afdbb1c5bb = L.marker(
+                [37.5642965417763, 126.981844846266],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_dc21b8e7070732666d44b2506718d52a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a1ab529d88e4ca8615c3b891fb9b450 = $(`<div id="html_2a1ab529d88e4ca8615c3b891fb9b450" style="width: 100.0%; height: 100.0%;"><b>롯데시네마 에비뉴엘</b><br>주소: 서울 중구 남대문로 73<br>⭐ 정보 없음</div>`)[0];
+                popup_dc21b8e7070732666d44b2506718d52a.setContent(html_2a1ab529d88e4ca8615c3b891fb9b450);
+            
+        
+
+        marker_db0016073018caf4be7798afdbb1c5bb.bindPopup(popup_dc21b8e7070732666d44b2506718d52a)
+        ;
+
+        
+    
+    
+            var marker_5f98d25e086b5282d55fade5961144b4 = L.marker(
+                [37.561320146600636, 126.98543344554172],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_231b7a4d4844583fa7b23bb08da4b2f5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0e54b1e3d537946469deed6549c55382 = $(`<div id="html_0e54b1e3d537946469deed6549c55382" style="width: 100.0%; height: 100.0%;"><b>CGV 명동역 씨네라이브러리</b><br>주소: 서울 중구 퇴계로 123<br>⭐ 정보 없음</div>`)[0];
+                popup_231b7a4d4844583fa7b23bb08da4b2f5.setContent(html_0e54b1e3d537946469deed6549c55382);
+            
+        
+
+        marker_5f98d25e086b5282d55fade5961144b4.bindPopup(popup_231b7a4d4844583fa7b23bb08da4b2f5)
+        ;
+
+        
+    
+    
+            var marker_670919b0106f593a02d7795fad62bb8a = L.marker(
+                [37.570993818720254, 126.99131327152529],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_6e65e3420d9414d7b04c1bb3530c81ec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9c45996908c4abd537192bfffa5c4de3 = $(`<div id="html_9c45996908c4abd537192bfffa5c4de3" style="width: 100.0%; height: 100.0%;"><b>CGV 피카디리1958</b><br>주소: 서울 종로구 돈화문로5가길 1<br>⭐ 정보 없음</div>`)[0];
+                popup_6e65e3420d9414d7b04c1bb3530c81ec.setContent(html_9c45996908c4abd537192bfffa5c4de3);
+            
+        
+
+        marker_670919b0106f593a02d7795fad62bb8a.bindPopup(popup_6e65e3420d9414d7b04c1bb3530c81ec)
+        ;
+
+        
+    
+    
+            var marker_caf38f5b9ad0bec052edac2e17bec797 = L.marker(
+                [37.5659384342432, 126.973740099183],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_85686518849c1c06a37dcb038195ba53 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9880e0ef7fff7366fce0952f415ecd0b = $(`<div id="html_9880e0ef7fff7366fce0952f415ecd0b" style="width: 100.0%; height: 100.0%;"><b>국립현대미술관 덕수궁</b><br>주소: 서울 중구 세종대로 99<br>⭐ 정보 없음</div>`)[0];
+                popup_85686518849c1c06a37dcb038195ba53.setContent(html_9880e0ef7fff7366fce0952f415ecd0b);
+            
+        
+
+        marker_caf38f5b9ad0bec052edac2e17bec797.bindPopup(popup_85686518849c1c06a37dcb038195ba53)
+        ;
+
+        
+    
+    
+            var marker_55206ee977b882a4e928d6b502415a9c = L.marker(
+                [37.5641076212639, 126.973790543874],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_e55b609a7367f5616cd00e09d426b689 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f98f0959331e65fc19e924570e375578 = $(`<div id="html_f98f0959331e65fc19e924570e375578" style="width: 100.0%; height: 100.0%;"><b>서울시립미술관 서소문본관</b><br>주소: 서울 중구 덕수궁길 61<br>⭐ 정보 없음</div>`)[0];
+                popup_e55b609a7367f5616cd00e09d426b689.setContent(html_f98f0959331e65fc19e924570e375578);
+            
+        
+
+        marker_55206ee977b882a4e928d6b502415a9c.bindPopup(popup_e55b609a7367f5616cd00e09d426b689)
+        ;
+
+        
+    
+    
+            var marker_eda770c025da8345dbce9edd0b49ebed = L.marker(
+                [37.5685753051734, 126.981418201295],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_fbce8f94cd90a3bef9e1a70c30adcb0e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7002ddbf6c73c8b62c1d43deaefcce63 = $(`<div id="html_7002ddbf6c73c8b62c1d43deaefcce63" style="width: 100.0%; height: 100.0%;"><b>하이커 그라운드</b><br>주소: 서울 중구 청계천로 40<br>⭐ 정보 없음</div>`)[0];
+                popup_fbce8f94cd90a3bef9e1a70c30adcb0e.setContent(html_7002ddbf6c73c8b62c1d43deaefcce63);
+            
+        
+
+        marker_eda770c025da8345dbce9edd0b49ebed.bindPopup(popup_fbce8f94cd90a3bef9e1a70c30adcb0e)
+        ;
+
+        
+    
+    
+            var marker_7f5f466c630ee1001befd6263fac8475 = L.marker(
+                [37.572594523923904, 126.97577874563281],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_2b2baf1c255df765a28d567d91fd487a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ca66203b58885ab44aac016e4405410a = $(`<div id="html_ca66203b58885ab44aac016e4405410a" style="width: 100.0%; height: 100.0%;"><b>세종문화회관</b><br>주소: 서울 종로구 세종대로 175<br>⭐ 정보 없음</div>`)[0];
+                popup_2b2baf1c255df765a28d567d91fd487a.setContent(html_ca66203b58885ab44aac016e4405410a);
+            
+        
+
+        marker_7f5f466c630ee1001befd6263fac8475.bindPopup(popup_2b2baf1c255df765a28d567d91fd487a)
+        ;
+
+        
+    
+    
+            var marker_37f812d6bba9932a1ce54c08db606a28 = L.marker(
+                [37.5620978998462, 126.980523397494],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_7ae1abef40a53c103b740e798e29cc22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f60639ee8767b330e0df54a1b7321cd4 = $(`<div id="html_f60639ee8767b330e0df54a1b7321cd4" style="width: 100.0%; height: 100.0%;"><b>한국은행 화폐박물관</b><br>주소: 서울 중구 남대문로 39<br>⭐ 정보 없음</div>`)[0];
+                popup_7ae1abef40a53c103b740e798e29cc22.setContent(html_f60639ee8767b330e0df54a1b7321cd4);
+            
+        
+
+        marker_37f812d6bba9932a1ce54c08db606a28.bindPopup(popup_7ae1abef40a53c103b740e798e29cc22)
+        ;
+
+        
+    
+    
+            var marker_d124b7d28b93e47c40f07950a2aa0491 = L.marker(
+                [37.5718530872608, 126.976183103242],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_902c5fa6cc67bbcdf683b7a16b116b54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9939086b36af10c8dcc1041363856544 = $(`<div id="html_9939086b36af10c8dcc1041363856544" style="width: 100.0%; height: 100.0%;"><b>세종문화회관 미술관</b><br>주소: 서울 종로구 세종대로 175<br>⭐ 정보 없음</div>`)[0];
+                popup_902c5fa6cc67bbcdf683b7a16b116b54.setContent(html_9939086b36af10c8dcc1041363856544);
+            
+        
+
+        marker_d124b7d28b93e47c40f07950a2aa0491.bindPopup(popup_902c5fa6cc67bbcdf683b7a16b116b54)
+        ;
+
+        
+    
+    
+            var marker_9bd3e34a69d29a6cb3b145c84fc3055b = L.marker(
+                [37.5667642080192, 126.97590401119],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_cb7222c52d34576a1e9545457a7201a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_af3bbef9ac50e9e9db519cb066db2418 = $(`<div id="html_af3bbef9ac50e9e9db519cb066db2418" style="width: 100.0%; height: 100.0%;"><b>국립정동극장 세실</b><br>주소: 서울 중구 세종대로19길 16<br>⭐ 정보 없음</div>`)[0];
+                popup_cb7222c52d34576a1e9545457a7201a2.setContent(html_af3bbef9ac50e9e9db519cb066db2418);
+            
+        
+
+        marker_9bd3e34a69d29a6cb3b145c84fc3055b.bindPopup(popup_cb7222c52d34576a1e9545457a7201a2)
+        ;
+
+        
+    
+    
+            var marker_de4b629922c2fdc90d3e5f61513cf8b6 = L.marker(
+                [37.5658589281598, 126.972775755916],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_a4c98357018dfb21e1e672e31720d860 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44a8c8c985ed14b0195d0b2ad217a1ac = $(`<div id="html_44a8c8c985ed14b0195d0b2ad217a1ac" style="width: 100.0%; height: 100.0%;"><b>국립정동극장</b><br>주소: 서울 중구 정동길 43<br>⭐ 정보 없음</div>`)[0];
+                popup_a4c98357018dfb21e1e672e31720d860.setContent(html_44a8c8c985ed14b0195d0b2ad217a1ac);
+            
+        
+
+        marker_de4b629922c2fdc90d3e5f61513cf8b6.bindPopup(popup_a4c98357018dfb21e1e672e31720d860)
+        ;
+
+        
+    
+    
+            var marker_bacced086a931231c5c521c271a5424d = L.marker(
+                [37.5696501678756, 126.972131429357],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_9470e0c23d17ffe009baf739dc553c80 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3648d626c6e63b344a23c309ccb4aae2 = $(`<div id="html_3648d626c6e63b344a23c309ccb4aae2" style="width: 100.0%; height: 100.0%;"><b>씨네큐브 광화문</b><br>주소: 서울 종로구 새문안로 68<br>⭐ 정보 없음</div>`)[0];
+                popup_9470e0c23d17ffe009baf739dc553c80.setContent(html_3648d626c6e63b344a23c309ccb4aae2);
+            
+        
+
+        marker_bacced086a931231c5c521c271a5424d.bindPopup(popup_9470e0c23d17ffe009baf739dc553c80)
+        ;
+
+        
+    
+    
+            var marker_b5338835b4959af6941dd8f4a4c2cfeb = L.marker(
+                [37.5705003227005, 126.970546366796],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_101c5e646e1d6d1b44b0273fa5da6aee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_72b21c721f07c707ca27fd3001d04fd6 = $(`<div id="html_72b21c721f07c707ca27fd3001d04fd6" style="width: 100.0%; height: 100.0%;"><b>서울역사박물관</b><br>주소: 서울 종로구 새문안로 55<br>⭐ 정보 없음</div>`)[0];
+                popup_101c5e646e1d6d1b44b0273fa5da6aee.setContent(html_72b21c721f07c707ca27fd3001d04fd6);
+            
+        
+
+        marker_b5338835b4959af6941dd8f4a4c2cfeb.bindPopup(popup_101c5e646e1d6d1b44b0273fa5da6aee)
+        ;
+
+        
+    
+    
+            var marker_67286ac538623e571013f1725b246956 = L.marker(
+                [37.5728621787462, 126.976069582189],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_355958894445657764475f0ba6e80529 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_308a2b0ff1bc825cd6c8db307a55257f = $(`<div id="html_308a2b0ff1bc825cd6c8db307a55257f" style="width: 100.0%; height: 100.0%;"><b>세종문화회관 대극장</b><br>주소: 서울 종로구 세종대로 175<br>⭐ 정보 없음</div>`)[0];
+                popup_355958894445657764475f0ba6e80529.setContent(html_308a2b0ff1bc825cd6c8db307a55257f);
+            
+        
+
+        marker_67286ac538623e571013f1725b246956.bindPopup(popup_355958894445657764475f0ba6e80529)
+        ;
+
+        
+    
+    
+            var marker_f3efee71dc1ad8bad09b01699481ea72 = L.marker(
+                [37.5655638710672, 126.974894754989],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_067ff86831ae21fd69c02806b33c3492 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_652bba724fb74a4ba2c586aea1b893b1 = $(`<div id="html_652bba724fb74a4ba2c586aea1b893b1" style="width: 100.0%; height: 100.0%;"><b>덕수궁</b><br>주소: 서울 중구 세종대로 99<br>⭐ 정보 없음</div>`)[0];
+                popup_067ff86831ae21fd69c02806b33c3492.setContent(html_652bba724fb74a4ba2c586aea1b893b1);
+            
+        
+
+        marker_f3efee71dc1ad8bad09b01699481ea72.bindPopup(popup_067ff86831ae21fd69c02806b33c3492)
+        ;
+
+        
+    
+    
+            var marker_48774c81b5bd327c6e63b8e72c0eacc9 = L.marker(
+                [37.564976582796, 126.975664628917],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_99fd99303fcf66197a475d31c0bb900f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_27b7213198cb7db0ef89f67a633d3573 = $(`<div id="html_27b7213198cb7db0ef89f67a633d3573" style="width: 100.0%; height: 100.0%;"><b>덕수궁돌담길</b><br>주소: 서울 중구 세종대로 지하 101<br>⭐ 정보 없음</div>`)[0];
+                popup_99fd99303fcf66197a475d31c0bb900f.setContent(html_27b7213198cb7db0ef89f67a633d3573);
+            
+        
+
+        marker_48774c81b5bd327c6e63b8e72c0eacc9.bindPopup(popup_99fd99303fcf66197a475d31c0bb900f)
+        ;
+
+        
+    
+    
+            var marker_d589309ba08aafe87efad3d307c964f6 = L.marker(
+                [37.56456211289399, 126.97560817016978],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_c378d00bde9747f5c5404967352b39ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_acc284a2e7cbe9f81775403bad43555d = $(`<div id="html_acc284a2e7cbe9f81775403bad43555d" style="width: 100.0%; height: 100.0%;"><b>정동전망대</b><br>주소: 서울 중구 덕수궁길 15<br>⭐ 정보 없음</div>`)[0];
+                popup_c378d00bde9747f5c5404967352b39ab.setContent(html_acc284a2e7cbe9f81775403bad43555d);
+            
+        
+
+        marker_d589309ba08aafe87efad3d307c964f6.bindPopup(popup_c378d00bde9747f5c5404967352b39ab)
+        ;
+
+        
+    
+    
+            var marker_89f14a517a317add7f2a79e6fd456b5e = L.marker(
+                [37.5620769169639, 126.984901336292],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_4ca7f1782c5ff475ef72193b16419fca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_de0710013729305876d52e6ba3cc4e4e = $(`<div id="html_de0710013729305876d52e6ba3cc4e4e" style="width: 100.0%; height: 100.0%;"><b>명동거리</b><br>주소: 서울 중구 명동2가<br>⭐ 정보 없음</div>`)[0];
+                popup_4ca7f1782c5ff475ef72193b16419fca.setContent(html_de0710013729305876d52e6ba3cc4e4e);
+            
+        
+
+        marker_89f14a517a317add7f2a79e6fd456b5e.bindPopup(popup_4ca7f1782c5ff475ef72193b16419fca)
+        ;
+
+        
+    
+    
+            var marker_d6075e3aa7170dfc6de77775880f63b4 = L.marker(
+                [37.5596933919402, 126.976924906434],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_d7afb1b09b235e981d29655bd232d965 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c0c4d5b2e32b2152eea9c62d2b95a1ad = $(`<div id="html_c0c4d5b2e32b2152eea9c62d2b95a1ad" style="width: 100.0%; height: 100.0%;"><b>남대문갈치조림골목</b><br>주소: 서울 중구 남대문시장길 16-17<br>⭐ 정보 없음</div>`)[0];
+                popup_d7afb1b09b235e981d29655bd232d965.setContent(html_c0c4d5b2e32b2152eea9c62d2b95a1ad);
+            
+        
+
+        marker_d6075e3aa7170dfc6de77775880f63b4.bindPopup(popup_d7afb1b09b235e981d29655bd232d965)
+        ;
+
+        
+    
+    
+            var marker_7a4ecd31d9971a6adff363dfa50320a1 = L.marker(
+                [37.5707881525953, 126.968649079046],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_2770794bd97f192349676ed8d9c2aeb4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89255b0e752774ddf61ed04c8ff04892 = $(`<div id="html_89255b0e752774ddf61ed04c8ff04892" style="width: 100.0%; height: 100.0%;"><b>경희궁</b><br>주소: 서울 종로구 새문안로 45<br>⭐ 정보 없음</div>`)[0];
+                popup_2770794bd97f192349676ed8d9c2aeb4.setContent(html_89255b0e752774ddf61ed04c8ff04892);
+            
+        
+
+        marker_7a4ecd31d9971a6adff363dfa50320a1.bindPopup(popup_2770794bd97f192349676ed8d9c2aeb4)
+        ;
+
+        
+    
+    
+            var marker_1ea36925f698a072c14f044d0ed0240f = L.marker(
+                [37.57189803811425, 126.98714973498457],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_f17ee61dfa23e3dbf9b4f68ba8223539 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e71af85d6954bef6d4c572acb6ebcb3d = $(`<div id="html_e71af85d6954bef6d4c572acb6ebcb3d" style="width: 100.0%; height: 100.0%;"><b>다이나믹메이즈 서울인사동점</b><br>주소: 서울 종로구 인사동길 12<br>⭐ 정보 없음</div>`)[0];
+                popup_f17ee61dfa23e3dbf9b4f68ba8223539.setContent(html_e71af85d6954bef6d4c572acb6ebcb3d);
+            
+        
+
+        marker_1ea36925f698a072c14f044d0ed0240f.bindPopup(popup_f17ee61dfa23e3dbf9b4f68ba8223539)
+        ;
+
+        
+    
+    
+            var marker_4537d9efa3dff07c93135feea79e15b4 = L.marker(
+                [37.5745467832909, 126.985591616819],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_48bc22b963d10422e569fd25f220ea81 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b67ac09899669eefb9aafbe14db3479c = $(`<div id="html_b67ac09899669eefb9aafbe14db3479c" style="width: 100.0%; height: 100.0%;"><b>인사동 문화의거리</b><br>주소: 서울 종로구 인사동10길 11-4<br>⭐ 정보 없음</div>`)[0];
+                popup_48bc22b963d10422e569fd25f220ea81.setContent(html_b67ac09899669eefb9aafbe14db3479c);
+            
+        
+
+        marker_4537d9efa3dff07c93135feea79e15b4.bindPopup(popup_48bc22b963d10422e569fd25f220ea81)
+        ;
+
+        
+    
+    
+            var marker_9ba78ae31aeb8037a9996e16f3cd5436 = L.marker(
+                [37.577613288258206, 126.97689786832184],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_f7d107adee0e085dce2fe19e713c1ae8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_42b9990fd6f93f1e25c5a0d356bfafe3 = $(`<div id="html_42b9990fd6f93f1e25c5a0d356bfafe3" style="width: 100.0%; height: 100.0%;"><b>경복궁</b><br>주소: 서울 종로구 사직로 161<br>⭐ 정보 없음</div>`)[0];
+                popup_f7d107adee0e085dce2fe19e713c1ae8.setContent(html_42b9990fd6f93f1e25c5a0d356bfafe3);
+            
+        
+
+        marker_9ba78ae31aeb8037a9996e16f3cd5436.bindPopup(popup_f7d107adee0e085dce2fe19e713c1ae8)
+        ;
+
+        
+    
+    
+            var marker_a02d61608cedc490cab17bcef375c7ef = L.marker(
+                [37.5733610774662, 126.98561901337],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_aee9f28b324ba37bb91df097b5957df1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_33f7109f00b6576c697696f5f60557e2 = $(`<div id="html_33f7109f00b6576c697696f5f60557e2" style="width: 100.0%; height: 100.0%;"><b>인사동거리</b><br>주소: 서울 종로구 관훈동<br>⭐ 정보 없음</div>`)[0];
+                popup_aee9f28b324ba37bb91df097b5957df1.setContent(html_33f7109f00b6576c697696f5f60557e2);
+            
+        
+
+        marker_a02d61608cedc490cab17bcef375c7ef.bindPopup(popup_aee9f28b324ba37bb91df097b5957df1)
+        ;
+
+        
+    
+    
+            var marker_7664a3f6e1948d0a28c3ba66a22d7f94 = L.marker(
+                [37.558287872702, 126.97711095122],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_c7aafdc80f2b3a0c282eeb907e2ecf8d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_302b44f41e2d23726b0368855598ef19 = $(`<div id="html_302b44f41e2d23726b0368855598ef19" style="width: 100.0%; height: 100.0%;"><b>남대문칼국수골목</b><br>주소: 서울 중구 남대문시장4길 42-1<br>⭐ 정보 없음</div>`)[0];
+                popup_c7aafdc80f2b3a0c282eeb907e2ecf8d.setContent(html_302b44f41e2d23726b0368855598ef19);
+            
+        
+
+        marker_7664a3f6e1948d0a28c3ba66a22d7f94.bindPopup(popup_c7aafdc80f2b3a0c282eeb907e2ecf8d)
+        ;
+
+        
+    
+    
+            var marker_da9298d7842971c44094e73439f75724 = L.marker(
+                [37.563523260181675, 126.97156325655304],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_3e822e8aa7c5ab60a0dd1bd58f55491b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8834e7642499c7574cc8fdb854f3c4eb = $(`<div id="html_8834e7642499c7574cc8fdb854f3c4eb" style="width: 100.0%; height: 100.0%;"><b>서울한양도성 숭례문구간</b><br>주소: 서울 중구 순화동 1-144<br>⭐ 정보 없음</div>`)[0];
+                popup_3e822e8aa7c5ab60a0dd1bd58f55491b.setContent(html_8834e7642499c7574cc8fdb854f3c4eb);
+            
+        
+
+        marker_da9298d7842971c44094e73439f75724.bindPopup(popup_3e822e8aa7c5ab60a0dd1bd58f55491b)
+        ;
+
+        
+    
+    
+            var marker_9286dca159238efdeead9c73690ff618 = L.marker(
+                [37.5734371942191, 126.989775723896],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_e37ecc0fde3ecb9adaadd330bcee345b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_789bb4e5ca2bc92ddb76ae95f78b1b54 = $(`<div id="html_789bb4e5ca2bc92ddb76ae95f78b1b54" style="width: 100.0%; height: 100.0%;"><b>익선동한옥거리</b><br>주소: 서울 종로구 익선동<br>⭐ 정보 없음</div>`)[0];
+                popup_e37ecc0fde3ecb9adaadd330bcee345b.setContent(html_789bb4e5ca2bc92ddb76ae95f78b1b54);
+            
+        
+
+        marker_9286dca159238efdeead9c73690ff618.bindPopup(popup_e37ecc0fde3ecb9adaadd330bcee345b)
+        ;
+
+        
+    
+    
+            var marker_550267a14cedc8b9fe440593323b65ba = L.marker(
+                [37.5614811760833, 126.978006379609],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_b2f93b0fc34f10723640919b5e548770 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e06723638588a5fc6a5aef98e52bc9ef = $(`<div id="html_e06723638588a5fc6a5aef98e52bc9ef" style="width: 100.0%; height: 100.0%;"><b>북창동먹자골목</b><br>주소: 서울 중구 남대문로1길 10-8<br>⭐ 정보 없음</div>`)[0];
+                popup_b2f93b0fc34f10723640919b5e548770.setContent(html_e06723638588a5fc6a5aef98e52bc9ef);
+            
+        
+
+        marker_550267a14cedc8b9fe440593323b65ba.bindPopup(popup_b2f93b0fc34f10723640919b5e548770)
+        ;
+
+        
+    
+    
+            var marker_e516cbf96db4910e49ee204bea269d1e = L.marker(
+                [37.5692345332212, 126.985733001008],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_363c39ac0536b701343e472012373819 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ba71c0cbf3140aabeebc0239131f032 = $(`<div id="html_6ba71c0cbf3140aabeebc0239131f032" style="width: 100.0%; height: 100.0%;"><b>젊음의거리</b><br>주소: 서울 종로구 관철동 32<br>⭐ 정보 없음</div>`)[0];
+                popup_363c39ac0536b701343e472012373819.setContent(html_6ba71c0cbf3140aabeebc0239131f032);
+            
+        
+
+        marker_e516cbf96db4910e49ee204bea269d1e.bindPopup(popup_363c39ac0536b701343e472012373819)
+        ;
+
+        
+    
+    
+            var marker_4ae4fd94b217b9a1e4f4bc4204ff287d = L.marker(
+                [37.5630391684739, 126.984801539439],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_faf5a79cd083d6e6ae867203189ac239 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d51dc1c9d2cff11c17667c9bcf8a0680 = $(`<div id="html_d51dc1c9d2cff11c17667c9bcf8a0680" style="width: 100.0%; height: 100.0%;"><b>CNP차앤박피부과 명동점</b><br>주소: 서울 중구 명동8길 17<br>⭐ 정보 없음</div>`)[0];
+                popup_faf5a79cd083d6e6ae867203189ac239.setContent(html_d51dc1c9d2cff11c17667c9bcf8a0680);
+            
+        
+
+        marker_4ae4fd94b217b9a1e4f4bc4204ff287d.bindPopup(popup_faf5a79cd083d6e6ae867203189ac239)
+        ;
+
+        
+    
+    
+            var marker_1b0c814d416bb655458ee0f2fcf6acba = L.marker(
+                [37.568509338947926, 126.96791880666925],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_013b70e0acf4aaa638f0bf507a571932 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e075dd351a3136a4464f61c6e89f320f = $(`<div id="html_e075dd351a3136a4464f61c6e89f320f" style="width: 100.0%; height: 100.0%;"><b>강북삼성병원</b><br>주소: 서울 종로구 새문안로 29<br>⭐ 정보 없음</div>`)[0];
+                popup_013b70e0acf4aaa638f0bf507a571932.setContent(html_e075dd351a3136a4464f61c6e89f320f);
+            
+        
+
+        marker_1b0c814d416bb655458ee0f2fcf6acba.bindPopup(popup_013b70e0acf4aaa638f0bf507a571932)
+        ;
+
+        
+    
+    
+            var marker_65397f517085becdbba7eb86f7018050 = L.marker(
+                [37.570844667972615, 126.97992344170883],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_4dfd000e1488d2ef269c7c1616e8e5a9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bc33601115509c8e4009fd4761512177 = $(`<div id="html_bc33601115509c8e4009fd4761512177" style="width: 100.0%; height: 100.0%;"><b>공안과의원</b><br>주소: 서울 종로구 종로 19<br>⭐ 정보 없음</div>`)[0];
+                popup_4dfd000e1488d2ef269c7c1616e8e5a9.setContent(html_bc33601115509c8e4009fd4761512177);
+            
+        
+
+        marker_65397f517085becdbba7eb86f7018050.bindPopup(popup_4dfd000e1488d2ef269c7c1616e8e5a9)
+        ;
+
+        
+    
+    
+            var marker_39dc5405a5aa8cca96ced076539f08e8 = L.marker(
+                [37.5614854893174, 126.982216766969],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_f35a217c887d0c9c4dd628b2f0e75dbe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b417ac76232aaf85e29251ac3df13bf = $(`<div id="html_7b417ac76232aaf85e29251ac3df13bf" style="width: 100.0%; height: 100.0%;"><b>서울중앙메디컬센터</b><br>주소: 서울 중구 소공로 70<br>⭐ 정보 없음</div>`)[0];
+                popup_f35a217c887d0c9c4dd628b2f0e75dbe.setContent(html_7b417ac76232aaf85e29251ac3df13bf);
+            
+        
+
+        marker_39dc5405a5aa8cca96ced076539f08e8.bindPopup(popup_f35a217c887d0c9c4dd628b2f0e75dbe)
+        ;
+
+        
+    
+    
+            var marker_f14fd692374c96935afbd3057918c131 = L.marker(
+                [37.5671765124824, 126.966998002757],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_f8fde87c0ace113f1eeecabf1c535011 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5ec732bb12940fe7bd8b5dd5946d3238 = $(`<div id="html_5ec732bb12940fe7bd8b5dd5946d3238" style="width: 100.0%; height: 100.0%;"><b>서울적십자병원</b><br>주소: 서울 종로구 새문안로 9<br>⭐ 정보 없음</div>`)[0];
+                popup_f8fde87c0ace113f1eeecabf1c535011.setContent(html_5ec732bb12940fe7bd8b5dd5946d3238);
+            
+        
+
+        marker_f14fd692374c96935afbd3057918c131.bindPopup(popup_f8fde87c0ace113f1eeecabf1c535011)
+        ;
+
+        
+    
+    
+            var marker_cf91c619560170cfde0c771fb567bfb5 = L.marker(
+                [37.5637970872019, 126.975224719106],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_4ee23723e58c79648cf187d27a6d353b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b8ffc03f2dbccd93f781c1bd8c5d0ea = $(`<div id="html_8b8ffc03f2dbccd93f781c1bd8c5d0ea" style="width: 100.0%; height: 100.0%;"><b>바른마음치과의원</b><br>주소: 서울 중구 서소문로 129<br>⭐ 정보 없음</div>`)[0];
+                popup_4ee23723e58c79648cf187d27a6d353b.setContent(html_8b8ffc03f2dbccd93f781c1bd8c5d0ea);
+            
+        
+
+        marker_cf91c619560170cfde0c771fb567bfb5.bindPopup(popup_4ee23723e58c79648cf187d27a6d353b)
+        ;
+
+        
+    
+    
+            var marker_79ee7326613357a03ccee0f8470a5005 = L.marker(
+                [37.56419438447679, 126.98591958825192],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_3a49fa33a60dec43ecbbabb5d4ff7a63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fa45852d0f697aaddb0545df096b279c = $(`<div id="html_fa45852d0f697aaddb0545df096b279c" style="width: 100.0%; height: 100.0%;"><b>루비의원</b><br>주소: 서울 중구 명동길 65<br>⭐ 정보 없음</div>`)[0];
+                popup_3a49fa33a60dec43ecbbabb5d4ff7a63.setContent(html_fa45852d0f697aaddb0545df096b279c);
+            
+        
+
+        marker_79ee7326613357a03ccee0f8470a5005.bindPopup(popup_3a49fa33a60dec43ecbbabb5d4ff7a63)
+        ;
+
+        
+    
+    
+            var marker_8347aceab74efea4f6af2d633dd25c8b = L.marker(
+                [37.565167139991026, 126.98344964168125],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_d6faa504e345ff79ad0c204ddba61e3d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89cd6c3e7210a856512a2f4b08fec009 = $(`<div id="html_89cd6c3e7210a856512a2f4b08fec009" style="width: 100.0%; height: 100.0%;"><b>명동성모안과</b><br>주소: 서울 중구 남대문로 92<br>⭐ 정보 없음</div>`)[0];
+                popup_d6faa504e345ff79ad0c204ddba61e3d.setContent(html_89cd6c3e7210a856512a2f4b08fec009);
+            
+        
+
+        marker_8347aceab74efea4f6af2d633dd25c8b.bindPopup(popup_d6faa504e345ff79ad0c204ddba61e3d)
+        ;
+
+        
+    
+    
+            var marker_9441e2fd8d9b80b949cb8f2dff022a7d = L.marker(
+                [37.56418499826504, 126.98305596968034],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_8d4632021d1759b0cbc84710f63ad0de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e6119d8551d988c06899eca88cb2bcf1 = $(`<div id="html_e6119d8551d988c06899eca88cb2bcf1" style="width: 100.0%; height: 100.0%;"><b>아비쥬의원 명동</b><br>주소: 서울 중구 남대문로 78<br>⭐ 정보 없음</div>`)[0];
+                popup_8d4632021d1759b0cbc84710f63ad0de.setContent(html_e6119d8551d988c06899eca88cb2bcf1);
+            
+        
+
+        marker_9441e2fd8d9b80b949cb8f2dff022a7d.bindPopup(popup_8d4632021d1759b0cbc84710f63ad0de)
+        ;
+
+        
+    
+    
+            var marker_7e5d35c9abaa82ef9c58f500953f1275 = L.marker(
+                [37.565059086448265, 126.98392731851168],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_c433548782d474d823d01c9b3eaf704a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d501a1450d3cff6a451323c822d395a5 = $(`<div id="html_d501a1450d3cff6a451323c822d395a5" style="width: 100.0%; height: 100.0%;"><b>명동연세이비인후과의원</b><br>주소: 서울 중구 명동9가길 12<br>⭐ 정보 없음</div>`)[0];
+                popup_c433548782d474d823d01c9b3eaf704a.setContent(html_d501a1450d3cff6a451323c822d395a5);
+            
+        
+
+        marker_7e5d35c9abaa82ef9c58f500953f1275.bindPopup(popup_c433548782d474d823d01c9b3eaf704a)
+        ;
+
+        
+    
+    
+            var marker_1b6a4ba70efd91265a69e8cea2888c1c = L.marker(
+                [37.5650886778756, 126.98291993947268],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_e9499bd863e09b53b034d8027692f9a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a6b09c9ef021c3ac06593ac3b97414af = $(`<div id="html_a6b09c9ef021c3ac06593ac3b97414af" style="width: 100.0%; height: 100.0%;"><b>밴스의원 명동</b><br>주소: 서울 중구 남대문로 90<br>⭐ 정보 없음</div>`)[0];
+                popup_e9499bd863e09b53b034d8027692f9a0.setContent(html_a6b09c9ef021c3ac06593ac3b97414af);
+            
+        
+
+        marker_1b6a4ba70efd91265a69e8cea2888c1c.bindPopup(popup_e9499bd863e09b53b034d8027692f9a0)
+        ;
+
+        
+    
+    
+            var marker_e6c3059ac35a309243fdaf406a1700ef = L.marker(
+                [37.56311539225291, 126.98221751140251],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_bd8a1b44a3c7eaa221e2ef47940e0b09 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0fff647dee26896d1306abdd5ba989a5 = $(`<div id="html_0fff647dee26896d1306abdd5ba989a5" style="width: 100.0%; height: 100.0%;"><b>명동하나이비인후과의원</b><br>주소: 서울 중구 남대문로 68<br>⭐ 정보 없음</div>`)[0];
+                popup_bd8a1b44a3c7eaa221e2ef47940e0b09.setContent(html_0fff647dee26896d1306abdd5ba989a5);
+            
+        
+
+        marker_e6c3059ac35a309243fdaf406a1700ef.bindPopup(popup_bd8a1b44a3c7eaa221e2ef47940e0b09)
+        ;
+
+        
+    
+    
+            var marker_0ac95ddaa11e01cf851845099505e30b = L.marker(
+                [37.564680515125644, 126.98284080153431],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_d6da855995d085963a5fd53e96f19bf0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_541c3b65b86a17758363f879d6d6b56d = $(`<div id="html_541c3b65b86a17758363f879d6d6b56d" style="width: 100.0%; height: 100.0%;"><b>쁨글로벌의원 명동점</b><br>주소: 서울 중구 남대문로 84<br>⭐ 정보 없음</div>`)[0];
+                popup_d6da855995d085963a5fd53e96f19bf0.setContent(html_541c3b65b86a17758363f879d6d6b56d);
+            
+        
+
+        marker_0ac95ddaa11e01cf851845099505e30b.bindPopup(popup_d6da855995d085963a5fd53e96f19bf0)
+        ;
+
+        
+    
+    
+            var marker_c80130a0f87aa033f7b8e5cda0598708 = L.marker(
+                [37.56879020544934, 126.9788192241803],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_c371011bd917dd3b18f976466b6a1ebf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03f6694b919bed64d5d53e17b5805e3e = $(`<div id="html_03f6694b919bed64d5d53e17b5805e3e" style="width: 100.0%; height: 100.0%;"><b>우리본정형외과의원</b><br>주소: 서울 중구 청계천로 14<br>⭐ 정보 없음</div>`)[0];
+                popup_c371011bd917dd3b18f976466b6a1ebf.setContent(html_03f6694b919bed64d5d53e17b5805e3e);
+            
+        
+
+        marker_c80130a0f87aa033f7b8e5cda0598708.bindPopup(popup_c371011bd917dd3b18f976466b6a1ebf)
+        ;
+
+        
+    
+    
+            var marker_7269a7997f04d87e50a281e0db2984c7 = L.marker(
+                [37.5748238680082, 126.97293324042],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_3ec556d4a5780d3952553f1da073634d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bf020fde4823786fdeea5dce521a1545 = $(`<div id="html_bf020fde4823786fdeea5dce521a1545" style="width: 100.0%; height: 100.0%;"><b>도반한방병원</b><br>주소: 서울 종로구 새문안로5가길 33<br>⭐ 정보 없음</div>`)[0];
+                popup_3ec556d4a5780d3952553f1da073634d.setContent(html_bf020fde4823786fdeea5dce521a1545);
+            
+        
+
+        marker_7269a7997f04d87e50a281e0db2984c7.bindPopup(popup_3ec556d4a5780d3952553f1da073634d)
+        ;
+
+        
+    
+    
+            var marker_d6ae74c5a1ea6ea41ec9d02cc0200a84 = L.marker(
+                [37.5630391684739, 126.984801539439],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_da8ae39e389fcd77259f9ad534218e27 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e8b9fe8c5389d8449becbf45924068e2 = $(`<div id="html_e8b9fe8c5389d8449becbf45924068e2" style="width: 100.0%; height: 100.0%;"><b>CNP차앤박피부과 명동점</b><br>주소: 서울 중구 명동8길 17<br>⭐ 정보 없음</div>`)[0];
+                popup_da8ae39e389fcd77259f9ad534218e27.setContent(html_e8b9fe8c5389d8449becbf45924068e2);
+            
+        
+
+        marker_d6ae74c5a1ea6ea41ec9d02cc0200a84.bindPopup(popup_da8ae39e389fcd77259f9ad534218e27)
+        ;
+
+        
+    
+    
+            var marker_cce7b078db388243911d960fb8ef4dc0 = L.marker(
+                [37.568509338947926, 126.96791880666925],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_4855f01d847e5833e69845b5eca85bf1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_afa2c39ed81c5f9941ecc455dfc1f504 = $(`<div id="html_afa2c39ed81c5f9941ecc455dfc1f504" style="width: 100.0%; height: 100.0%;"><b>강북삼성병원</b><br>주소: 서울 종로구 새문안로 29<br>⭐ 정보 없음</div>`)[0];
+                popup_4855f01d847e5833e69845b5eca85bf1.setContent(html_afa2c39ed81c5f9941ecc455dfc1f504);
+            
+        
+
+        marker_cce7b078db388243911d960fb8ef4dc0.bindPopup(popup_4855f01d847e5833e69845b5eca85bf1)
+        ;
+
+        
+    
+    
+            var marker_5ad6608ebeeaaab8526c5f159e3f1c78 = L.marker(
+                [37.570844667972615, 126.97992344170883],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_424b4ce0cb2023ff8fd0486a951d579d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fba4b1b7b8dcd1fa450e73f4c663ce6d = $(`<div id="html_fba4b1b7b8dcd1fa450e73f4c663ce6d" style="width: 100.0%; height: 100.0%;"><b>공안과의원</b><br>주소: 서울 종로구 종로 19<br>⭐ 정보 없음</div>`)[0];
+                popup_424b4ce0cb2023ff8fd0486a951d579d.setContent(html_fba4b1b7b8dcd1fa450e73f4c663ce6d);
+            
+        
+
+        marker_5ad6608ebeeaaab8526c5f159e3f1c78.bindPopup(popup_424b4ce0cb2023ff8fd0486a951d579d)
+        ;
+
+        
+    
+    
+            var marker_62003f5c9f4ee463b3bd216dc75a0de4 = L.marker(
+                [37.5614854893174, 126.982216766969],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_3a3707eeb2149287ae925693e5206d71 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_016edb09f7f1c2f95a5107785bac1590 = $(`<div id="html_016edb09f7f1c2f95a5107785bac1590" style="width: 100.0%; height: 100.0%;"><b>서울중앙메디컬센터</b><br>주소: 서울 중구 소공로 70<br>⭐ 정보 없음</div>`)[0];
+                popup_3a3707eeb2149287ae925693e5206d71.setContent(html_016edb09f7f1c2f95a5107785bac1590);
+            
+        
+
+        marker_62003f5c9f4ee463b3bd216dc75a0de4.bindPopup(popup_3a3707eeb2149287ae925693e5206d71)
+        ;
+
+        
+    
+    
+            var marker_54a4a8664e7102302fe3c5fa66b8c399 = L.marker(
+                [37.5671765124824, 126.966998002757],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_441cbfd896f82118826088f4258eeb60 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_87be12dbe99145d9f1ca354955fdaedf = $(`<div id="html_87be12dbe99145d9f1ca354955fdaedf" style="width: 100.0%; height: 100.0%;"><b>서울적십자병원</b><br>주소: 서울 종로구 새문안로 9<br>⭐ 정보 없음</div>`)[0];
+                popup_441cbfd896f82118826088f4258eeb60.setContent(html_87be12dbe99145d9f1ca354955fdaedf);
+            
+        
+
+        marker_54a4a8664e7102302fe3c5fa66b8c399.bindPopup(popup_441cbfd896f82118826088f4258eeb60)
+        ;
+
+        
+    
+    
+            var marker_7bd0709539803d591e44aee37874d381 = L.marker(
+                [37.5637970872019, 126.975224719106],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_186175635a0e454e0bd80c359f86b08d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_893bd71a708b956e0f6b35b3b057118e = $(`<div id="html_893bd71a708b956e0f6b35b3b057118e" style="width: 100.0%; height: 100.0%;"><b>바른마음치과의원</b><br>주소: 서울 중구 서소문로 129<br>⭐ 정보 없음</div>`)[0];
+                popup_186175635a0e454e0bd80c359f86b08d.setContent(html_893bd71a708b956e0f6b35b3b057118e);
+            
+        
+
+        marker_7bd0709539803d591e44aee37874d381.bindPopup(popup_186175635a0e454e0bd80c359f86b08d)
+        ;
+
+        
+    
+    
+            var marker_0f0d6a222d3557187d010c8eb7996707 = L.marker(
+                [37.56419438447679, 126.98591958825192],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_9c5cff49a90e69e8856d0c31593d09cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bcf186836a5f056b0b893179f56bdd46 = $(`<div id="html_bcf186836a5f056b0b893179f56bdd46" style="width: 100.0%; height: 100.0%;"><b>루비의원</b><br>주소: 서울 중구 명동길 65<br>⭐ 정보 없음</div>`)[0];
+                popup_9c5cff49a90e69e8856d0c31593d09cc.setContent(html_bcf186836a5f056b0b893179f56bdd46);
+            
+        
+
+        marker_0f0d6a222d3557187d010c8eb7996707.bindPopup(popup_9c5cff49a90e69e8856d0c31593d09cc)
+        ;
+
+        
+    
+    
+            var marker_dc416f0b187606adb4e01066393ded66 = L.marker(
+                [37.565167139991026, 126.98344964168125],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_eb2582186aa0f5e168d228422f6b9403 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd0737de99353d563bac0c7c9b086fb0 = $(`<div id="html_fd0737de99353d563bac0c7c9b086fb0" style="width: 100.0%; height: 100.0%;"><b>명동성모안과</b><br>주소: 서울 중구 남대문로 92<br>⭐ 정보 없음</div>`)[0];
+                popup_eb2582186aa0f5e168d228422f6b9403.setContent(html_fd0737de99353d563bac0c7c9b086fb0);
+            
+        
+
+        marker_dc416f0b187606adb4e01066393ded66.bindPopup(popup_eb2582186aa0f5e168d228422f6b9403)
+        ;
+
+        
+    
+    
+            var marker_867932ab818f8c6c65a51e4e1a937be9 = L.marker(
+                [37.56418499826504, 126.98305596968034],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_4915dbab7827530fe75ff4901fef919e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_45c3525ff6182f8a630e381640f46905 = $(`<div id="html_45c3525ff6182f8a630e381640f46905" style="width: 100.0%; height: 100.0%;"><b>아비쥬의원 명동</b><br>주소: 서울 중구 남대문로 78<br>⭐ 정보 없음</div>`)[0];
+                popup_4915dbab7827530fe75ff4901fef919e.setContent(html_45c3525ff6182f8a630e381640f46905);
+            
+        
+
+        marker_867932ab818f8c6c65a51e4e1a937be9.bindPopup(popup_4915dbab7827530fe75ff4901fef919e)
+        ;
+
+        
+    
+    
+            var marker_cc1e0ceb174be7c4feb597ef80f290eb = L.marker(
+                [37.565059086448265, 126.98392731851168],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_0a77d49e8de1fce55d0760f325fb0f3f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8fadae191f287a9e83260af1d3b6ad82 = $(`<div id="html_8fadae191f287a9e83260af1d3b6ad82" style="width: 100.0%; height: 100.0%;"><b>명동연세이비인후과의원</b><br>주소: 서울 중구 명동9가길 12<br>⭐ 정보 없음</div>`)[0];
+                popup_0a77d49e8de1fce55d0760f325fb0f3f.setContent(html_8fadae191f287a9e83260af1d3b6ad82);
+            
+        
+
+        marker_cc1e0ceb174be7c4feb597ef80f290eb.bindPopup(popup_0a77d49e8de1fce55d0760f325fb0f3f)
+        ;
+
+        
+    
+    
+            var marker_6f4c24d2fe509bee5168ac2f448c48d0 = L.marker(
+                [37.5650886778756, 126.98291993947268],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_08d4c44e14ffc29f1f3cb2b688f0fc54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_401a6bd2ca30b4c785368c70d4ebaf54 = $(`<div id="html_401a6bd2ca30b4c785368c70d4ebaf54" style="width: 100.0%; height: 100.0%;"><b>밴스의원 명동</b><br>주소: 서울 중구 남대문로 90<br>⭐ 정보 없음</div>`)[0];
+                popup_08d4c44e14ffc29f1f3cb2b688f0fc54.setContent(html_401a6bd2ca30b4c785368c70d4ebaf54);
+            
+        
+
+        marker_6f4c24d2fe509bee5168ac2f448c48d0.bindPopup(popup_08d4c44e14ffc29f1f3cb2b688f0fc54)
+        ;
+
+        
+    
+    
+            var marker_7bdc5ea0a43810cec7001d4cf325c0e9 = L.marker(
+                [37.56311539225291, 126.98221751140251],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_aa1af722fb156234b6fbfce4fffd6f66 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d18b7987392eea1b5e6043adba76798 = $(`<div id="html_4d18b7987392eea1b5e6043adba76798" style="width: 100.0%; height: 100.0%;"><b>명동하나이비인후과의원</b><br>주소: 서울 중구 남대문로 68<br>⭐ 정보 없음</div>`)[0];
+                popup_aa1af722fb156234b6fbfce4fffd6f66.setContent(html_4d18b7987392eea1b5e6043adba76798);
+            
+        
+
+        marker_7bdc5ea0a43810cec7001d4cf325c0e9.bindPopup(popup_aa1af722fb156234b6fbfce4fffd6f66)
+        ;
+
+        
+    
+    
+            var marker_d1845172cfd7b2376684cdaa9d5a6de6 = L.marker(
+                [37.564680515125644, 126.98284080153431],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_e74fbf46730526d5ed845784ec5b3121 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2745163969811f82cc6958e002752336 = $(`<div id="html_2745163969811f82cc6958e002752336" style="width: 100.0%; height: 100.0%;"><b>쁨글로벌의원 명동점</b><br>주소: 서울 중구 남대문로 84<br>⭐ 정보 없음</div>`)[0];
+                popup_e74fbf46730526d5ed845784ec5b3121.setContent(html_2745163969811f82cc6958e002752336);
+            
+        
+
+        marker_d1845172cfd7b2376684cdaa9d5a6de6.bindPopup(popup_e74fbf46730526d5ed845784ec5b3121)
+        ;
+
+        
+    
+    
+            var marker_2d21e8d1a10d5bd9bf80b2a2d3843045 = L.marker(
+                [37.56879020544934, 126.9788192241803],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_f2b90dae2fece1a158987d95bb0a1c06 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_63f4f43dd2b090427ecfa8a7f76dd693 = $(`<div id="html_63f4f43dd2b090427ecfa8a7f76dd693" style="width: 100.0%; height: 100.0%;"><b>우리본정형외과의원</b><br>주소: 서울 중구 청계천로 14<br>⭐ 정보 없음</div>`)[0];
+                popup_f2b90dae2fece1a158987d95bb0a1c06.setContent(html_63f4f43dd2b090427ecfa8a7f76dd693);
+            
+        
+
+        marker_2d21e8d1a10d5bd9bf80b2a2d3843045.bindPopup(popup_f2b90dae2fece1a158987d95bb0a1c06)
+        ;
+
+        
+    
+    
+            var marker_2c45e389f7e98a9df7e338c6e367d87b = L.marker(
+                [37.5748238680082, 126.97293324042],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_947d543e86ee5cccd4c1686fb1cbc35b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8746edf811a8eac5fb23f21b6435314b = $(`<div id="html_8746edf811a8eac5fb23f21b6435314b" style="width: 100.0%; height: 100.0%;"><b>도반한방병원</b><br>주소: 서울 종로구 새문안로5가길 33<br>⭐ 정보 없음</div>`)[0];
+                popup_947d543e86ee5cccd4c1686fb1cbc35b.setContent(html_8746edf811a8eac5fb23f21b6435314b);
+            
+        
+
+        marker_2c45e389f7e98a9df7e338c6e367d87b.bindPopup(popup_947d543e86ee5cccd4c1686fb1cbc35b)
+        ;
+
+        
+    
+    
+            var marker_c6b39488b3fee478eeb808ed7b4d0470 = L.marker(
+                [37.5630391684739, 126.984801539439],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_f6c347d1aa062b28ee930eda18ec7fdf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_43852944e117320442cd1c17cc0a153c = $(`<div id="html_43852944e117320442cd1c17cc0a153c" style="width: 100.0%; height: 100.0%;"><b>CNP차앤박피부과 명동점</b><br>주소: 서울 중구 명동8길 17<br>⭐ 정보 없음</div>`)[0];
+                popup_f6c347d1aa062b28ee930eda18ec7fdf.setContent(html_43852944e117320442cd1c17cc0a153c);
+            
+        
+
+        marker_c6b39488b3fee478eeb808ed7b4d0470.bindPopup(popup_f6c347d1aa062b28ee930eda18ec7fdf)
+        ;
+
+        
+    
+    
+            var marker_d84829f6d54b1252acfd21fedad9a086 = L.marker(
+                [37.568509338947926, 126.96791880666925],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_92fb9cee6f027136b6d91d2a5b84920a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d36acd4483b6c42ef1bdcc39d3eaea30 = $(`<div id="html_d36acd4483b6c42ef1bdcc39d3eaea30" style="width: 100.0%; height: 100.0%;"><b>강북삼성병원</b><br>주소: 서울 종로구 새문안로 29<br>⭐ 정보 없음</div>`)[0];
+                popup_92fb9cee6f027136b6d91d2a5b84920a.setContent(html_d36acd4483b6c42ef1bdcc39d3eaea30);
+            
+        
+
+        marker_d84829f6d54b1252acfd21fedad9a086.bindPopup(popup_92fb9cee6f027136b6d91d2a5b84920a)
+        ;
+
+        
+    
+    
+            var marker_bc817cb784d00e3d613788b9b20b7d34 = L.marker(
+                [37.570844667972615, 126.97992344170883],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_08c8dac45d1a8f7de2a044db13561644 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_12c6f771052864f9aafec26a955bf2b6 = $(`<div id="html_12c6f771052864f9aafec26a955bf2b6" style="width: 100.0%; height: 100.0%;"><b>공안과의원</b><br>주소: 서울 종로구 종로 19<br>⭐ 정보 없음</div>`)[0];
+                popup_08c8dac45d1a8f7de2a044db13561644.setContent(html_12c6f771052864f9aafec26a955bf2b6);
+            
+        
+
+        marker_bc817cb784d00e3d613788b9b20b7d34.bindPopup(popup_08c8dac45d1a8f7de2a044db13561644)
+        ;
+
+        
+    
+    
+            var marker_0b74ec1a88216606aab19d6474673b5e = L.marker(
+                [37.5614854893174, 126.982216766969],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_60408461514359d1461507e417d066ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8134759f76e98457caed4b8e3fe809f2 = $(`<div id="html_8134759f76e98457caed4b8e3fe809f2" style="width: 100.0%; height: 100.0%;"><b>서울중앙메디컬센터</b><br>주소: 서울 중구 소공로 70<br>⭐ 정보 없음</div>`)[0];
+                popup_60408461514359d1461507e417d066ab.setContent(html_8134759f76e98457caed4b8e3fe809f2);
+            
+        
+
+        marker_0b74ec1a88216606aab19d6474673b5e.bindPopup(popup_60408461514359d1461507e417d066ab)
+        ;
+
+        
+    
+    
+            var marker_d90558e1b8b59a23bab393158cd02003 = L.marker(
+                [37.5671765124824, 126.966998002757],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_48b0358c69942a02881328e8a060d638 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a196b66a40689c4bd18c6d251b760bac = $(`<div id="html_a196b66a40689c4bd18c6d251b760bac" style="width: 100.0%; height: 100.0%;"><b>서울적십자병원</b><br>주소: 서울 종로구 새문안로 9<br>⭐ 정보 없음</div>`)[0];
+                popup_48b0358c69942a02881328e8a060d638.setContent(html_a196b66a40689c4bd18c6d251b760bac);
+            
+        
+
+        marker_d90558e1b8b59a23bab393158cd02003.bindPopup(popup_48b0358c69942a02881328e8a060d638)
+        ;
+
+        
+    
+    
+            var marker_25a8cd038cd90a551ac078b25b1eb974 = L.marker(
+                [37.5637970872019, 126.975224719106],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_b9c443719dddb673fc6503184f2fbf49 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d674031dcf054574a53687d0c0c2601 = $(`<div id="html_7d674031dcf054574a53687d0c0c2601" style="width: 100.0%; height: 100.0%;"><b>바른마음치과의원</b><br>주소: 서울 중구 서소문로 129<br>⭐ 정보 없음</div>`)[0];
+                popup_b9c443719dddb673fc6503184f2fbf49.setContent(html_7d674031dcf054574a53687d0c0c2601);
+            
+        
+
+        marker_25a8cd038cd90a551ac078b25b1eb974.bindPopup(popup_b9c443719dddb673fc6503184f2fbf49)
+        ;
+
+        
+    
+    
+            var marker_15b711852667baf61a7368f1838c8984 = L.marker(
+                [37.56419438447679, 126.98591958825192],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_679cf0a2269bee6aeb294861436d4e55 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7ae538aebfbc45d5f07103fbca2518e2 = $(`<div id="html_7ae538aebfbc45d5f07103fbca2518e2" style="width: 100.0%; height: 100.0%;"><b>루비의원</b><br>주소: 서울 중구 명동길 65<br>⭐ 정보 없음</div>`)[0];
+                popup_679cf0a2269bee6aeb294861436d4e55.setContent(html_7ae538aebfbc45d5f07103fbca2518e2);
+            
+        
+
+        marker_15b711852667baf61a7368f1838c8984.bindPopup(popup_679cf0a2269bee6aeb294861436d4e55)
+        ;
+
+        
+    
+    
+            var marker_71e29df235e7f158f17ce875b5c969be = L.marker(
+                [37.565167139991026, 126.98344964168125],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_0228d67eff674381dcc2ed3e36ef3950 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5c2c622ed21d7256561d4396f9ea39f = $(`<div id="html_c5c2c622ed21d7256561d4396f9ea39f" style="width: 100.0%; height: 100.0%;"><b>명동성모안과</b><br>주소: 서울 중구 남대문로 92<br>⭐ 정보 없음</div>`)[0];
+                popup_0228d67eff674381dcc2ed3e36ef3950.setContent(html_c5c2c622ed21d7256561d4396f9ea39f);
+            
+        
+
+        marker_71e29df235e7f158f17ce875b5c969be.bindPopup(popup_0228d67eff674381dcc2ed3e36ef3950)
+        ;
+
+        
+    
+    
+            var marker_c502eb83f7f00f7915dc4cfdc6bd0550 = L.marker(
+                [37.56418499826504, 126.98305596968034],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_bebac2284c0005b438c6b09a5347cad1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5d5c1c96b05b5f7677e0c03d71f49bef = $(`<div id="html_5d5c1c96b05b5f7677e0c03d71f49bef" style="width: 100.0%; height: 100.0%;"><b>아비쥬의원 명동</b><br>주소: 서울 중구 남대문로 78<br>⭐ 정보 없음</div>`)[0];
+                popup_bebac2284c0005b438c6b09a5347cad1.setContent(html_5d5c1c96b05b5f7677e0c03d71f49bef);
+            
+        
+
+        marker_c502eb83f7f00f7915dc4cfdc6bd0550.bindPopup(popup_bebac2284c0005b438c6b09a5347cad1)
+        ;
+
+        
+    
+    
+            var marker_09fac0c99e0b227b8f59807ca06fb955 = L.marker(
+                [37.565059086448265, 126.98392731851168],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_403afd4d72d818864f74887c19b08e60 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b3db6dbe00f7522a382f90da276058db = $(`<div id="html_b3db6dbe00f7522a382f90da276058db" style="width: 100.0%; height: 100.0%;"><b>명동연세이비인후과의원</b><br>주소: 서울 중구 명동9가길 12<br>⭐ 정보 없음</div>`)[0];
+                popup_403afd4d72d818864f74887c19b08e60.setContent(html_b3db6dbe00f7522a382f90da276058db);
+            
+        
+
+        marker_09fac0c99e0b227b8f59807ca06fb955.bindPopup(popup_403afd4d72d818864f74887c19b08e60)
+        ;
+
+        
+    
+    
+            var marker_10a7071fad69ed633b5891a95c4ca619 = L.marker(
+                [37.5650886778756, 126.98291993947268],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_5808770b833328e0cbfee5b390436ccd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86994113ea84969c3905a84c145db8d0 = $(`<div id="html_86994113ea84969c3905a84c145db8d0" style="width: 100.0%; height: 100.0%;"><b>밴스의원 명동</b><br>주소: 서울 중구 남대문로 90<br>⭐ 정보 없음</div>`)[0];
+                popup_5808770b833328e0cbfee5b390436ccd.setContent(html_86994113ea84969c3905a84c145db8d0);
+            
+        
+
+        marker_10a7071fad69ed633b5891a95c4ca619.bindPopup(popup_5808770b833328e0cbfee5b390436ccd)
+        ;
+
+        
+    
+    
+            var marker_e94999e22ff0eab42740db464ec20b06 = L.marker(
+                [37.56311539225291, 126.98221751140251],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_f58c1e3e8cdc53255d08d4dc0367381c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_960765360ee74642c8a11a95003d45dd = $(`<div id="html_960765360ee74642c8a11a95003d45dd" style="width: 100.0%; height: 100.0%;"><b>명동하나이비인후과의원</b><br>주소: 서울 중구 남대문로 68<br>⭐ 정보 없음</div>`)[0];
+                popup_f58c1e3e8cdc53255d08d4dc0367381c.setContent(html_960765360ee74642c8a11a95003d45dd);
+            
+        
+
+        marker_e94999e22ff0eab42740db464ec20b06.bindPopup(popup_f58c1e3e8cdc53255d08d4dc0367381c)
+        ;
+
+        
+    
+    
+            var marker_0bd92d4098ff2a6707623d82e2ba0e87 = L.marker(
+                [37.564680515125644, 126.98284080153431],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_d22df8d2ab39d3866a89fb79f29d13cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0bd3e8407e16407534b9b8cdba817463 = $(`<div id="html_0bd3e8407e16407534b9b8cdba817463" style="width: 100.0%; height: 100.0%;"><b>쁨글로벌의원 명동점</b><br>주소: 서울 중구 남대문로 84<br>⭐ 정보 없음</div>`)[0];
+                popup_d22df8d2ab39d3866a89fb79f29d13cc.setContent(html_0bd3e8407e16407534b9b8cdba817463);
+            
+        
+
+        marker_0bd92d4098ff2a6707623d82e2ba0e87.bindPopup(popup_d22df8d2ab39d3866a89fb79f29d13cc)
+        ;
+
+        
+    
+    
+            var marker_aee2df7ed026d0eb38c58f8892bc8064 = L.marker(
+                [37.56879020544934, 126.9788192241803],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_daadb91344023e4462379f62c314c9f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1be7b8e064eece1c446cb03f83d4f71 = $(`<div id="html_c1be7b8e064eece1c446cb03f83d4f71" style="width: 100.0%; height: 100.0%;"><b>우리본정형외과의원</b><br>주소: 서울 중구 청계천로 14<br>⭐ 정보 없음</div>`)[0];
+                popup_daadb91344023e4462379f62c314c9f1.setContent(html_c1be7b8e064eece1c446cb03f83d4f71);
+            
+        
+
+        marker_aee2df7ed026d0eb38c58f8892bc8064.bindPopup(popup_daadb91344023e4462379f62c314c9f1)
+        ;
+
+        
+    
+    
+            var marker_041ce00bb7be2c580c5daa6752f91b0c = L.marker(
+                [37.5748238680082, 126.97293324042],
+                {
+}
+            ).addTo(map_d98e62f9339b766f001ce63a28141726);
+        
+    
+        var popup_38a6ee9c7520721f8d0e4df54ebd8978 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cb00e347f6f72d5c66ea30255499fd21 = $(`<div id="html_cb00e347f6f72d5c66ea30255499fd21" style="width: 100.0%; height: 100.0%;"><b>도반한방병원</b><br>주소: 서울 종로구 새문안로5가길 33<br>⭐ 정보 없음</div>`)[0];
+                popup_38a6ee9c7520721f8d0e4df54ebd8978.setContent(html_cb00e347f6f72d5c66ea30255499fd21);
+            
+        
+
+        marker_041ce00bb7be2c580c5daa6752f91b0c.bindPopup(popup_38a6ee9c7520721f8d0e4df54ebd8978)
+        ;
+
+        
+    
+</script>
+</html>

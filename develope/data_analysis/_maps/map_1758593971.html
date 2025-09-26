@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d9578533bbaac2ac7753d3330f90542d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d9578533bbaac2ac7753d3330f90542d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d9578533bbaac2ac7753d3330f90542d = L.map(
+                "map_d9578533bbaac2ac7753d3330f90542d",
+                {
+                    center: [35.8703, 128.5911],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_428ef8f8d856968a7f3818e4df986f03 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_428ef8f8d856968a7f3818e4df986f03.addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+            var marker_73a94a96741c53435450a6475ac99ca0 = L.marker(
+                [35.8703, 128.5911],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+            var icon_bb932232618bf760d8a57d2306718865 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a953e57d55dc44f776db92a0276769a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eaf0757bc3ec1faa3bbdec5dbd08ab6c = $(`<div id="html_eaf0757bc3ec1faa3bbdec5dbd08ab6c" style="width: 100.0%; height: 100.0%;"><b>내 위치</b><br>내 위치 기반</div>`)[0];
+                popup_a953e57d55dc44f776db92a0276769a0.setContent(html_eaf0757bc3ec1faa3bbdec5dbd08ab6c);
+            
+        
+
+        marker_73a94a96741c53435450a6475ac99ca0.bindPopup(popup_a953e57d55dc44f776db92a0276769a0)
+        ;
+
+        
+    
+    
+                marker_73a94a96741c53435450a6475ac99ca0.setIcon(icon_bb932232618bf760d8a57d2306718865);
+            
+    
+            var marker_0895fe9b135ded2a8ab7a63fadde3e44 = L.marker(
+                [35.8706343384139, 128.595289276938],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_8c4477512b13bf0590805ec7b0f09f43 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_49cd4a3516c7973dc24ae93dd39fdb5e = $(`<div id="html_49cd4a3516c7973dc24ae93dd39fdb5e" style="width: 100.0%; height: 100.0%;"><b>CGV 대구한일</b><br>주소: 대구 중구 동성로 39<br>⭐ 정보 없음</div>`)[0];
+                popup_8c4477512b13bf0590805ec7b0f09f43.setContent(html_49cd4a3516c7973dc24ae93dd39fdb5e);
+            
+        
+
+        marker_0895fe9b135ded2a8ab7a63fadde3e44.bindPopup(popup_8c4477512b13bf0590805ec7b0f09f43)
+        ;
+
+        
+    
+    
+            var marker_264e86667092f75158c4e918334dda1c = L.marker(
+                [35.8699275485044, 128.594225534713],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_b447ca7d52d59a7a6741cfdbfbbf7c86 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8f8fbf65eb77b463a186596508cdb98e = $(`<div id="html_8f8fbf65eb77b463a186596508cdb98e" style="width: 100.0%; height: 100.0%;"><b>CGV 대구아카데미</b><br>주소: 대구 중구 중앙대로 412<br>⭐ 정보 없음</div>`)[0];
+                popup_b447ca7d52d59a7a6741cfdbfbbf7c86.setContent(html_8f8fbf65eb77b463a186596508cdb98e);
+            
+        
+
+        marker_264e86667092f75158c4e918334dda1c.bindPopup(popup_b447ca7d52d59a7a6741cfdbfbbf7c86)
+        ;
+
+        
+    
+    
+            var marker_ebc932d09a2ac7f09da1d0d5d1e77f00 = L.marker(
+                [35.870251388489265, 128.59677846197562],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_c3489217089ba1a206eb0ae0d14a63e0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_08c3955dddabbc78ea0314637e96b15e = $(`<div id="html_08c3955dddabbc78ea0314637e96b15e" style="width: 100.0%; height: 100.0%;"><b>롯데시네마 동성로</b><br>주소: 대구 중구 동성로2길 95<br>⭐ 정보 없음</div>`)[0];
+                popup_c3489217089ba1a206eb0ae0d14a63e0.setContent(html_08c3955dddabbc78ea0314637e96b15e);
+            
+        
+
+        marker_ebc932d09a2ac7f09da1d0d5d1e77f00.bindPopup(popup_c3489217089ba1a206eb0ae0d14a63e0)
+        ;
+
+        
+    
+    
+            var marker_7494bbce9f2b58bccc19922ff86dbd4e = L.marker(
+                [35.87088822082138, 128.59041512804245],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_006f8ebbc1c3c25a736f81f99e7ee7b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8fc5e3e7f60efc6e4109e6133468ca79 = $(`<div id="html_8fc5e3e7f60efc6e4109e6133468ca79" style="width: 100.0%; height: 100.0%;"><b>메가박스 대구프리미엄만경관</b><br>주소: 대구 중구 국채보상로 547<br>⭐ 정보 없음</div>`)[0];
+                popup_006f8ebbc1c3c25a736f81f99e7ee7b7.setContent(html_8fc5e3e7f60efc6e4109e6133468ca79);
+            
+        
+
+        marker_7494bbce9f2b58bccc19922ff86dbd4e.bindPopup(popup_006f8ebbc1c3c25a736f81f99e7ee7b7)
+        ;
+
+        
+    
+    
+            var marker_5166b5cacb81e2f04330cf85ff9b4151 = L.marker(
+                [35.866728762973345, 128.59114681941602],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_35f66d16dd7dcb32175c59c7920ef212 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_abb6569862b78e7616d43d921382843f = $(`<div id="html_abb6569862b78e7616d43d921382843f" style="width: 100.0%; height: 100.0%;"><b>CGV 대구현대</b><br>주소: 대구 중구 달구벌대로 2077<br>⭐ 정보 없음</div>`)[0];
+                popup_35f66d16dd7dcb32175c59c7920ef212.setContent(html_abb6569862b78e7616d43d921382843f);
+            
+        
+
+        marker_5166b5cacb81e2f04330cf85ff9b4151.bindPopup(popup_35f66d16dd7dcb32175c59c7920ef212)
+        ;
+
+        
+    
+    
+            var marker_70df5892bf91da7266f6906d4f080070 = L.marker(
+                [35.8717671448254, 128.591140178082],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_634caac2c2b26791af3e65f4b2a21874 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3dee0bfed07a80c105a29ea772675852 = $(`<div id="html_3dee0bfed07a80c105a29ea772675852" style="width: 100.0%; height: 100.0%;"><b>대구근대역사관</b><br>주소: 대구 중구 경상감영길 67<br>⭐ 정보 없음</div>`)[0];
+                popup_634caac2c2b26791af3e65f4b2a21874.setContent(html_3dee0bfed07a80c105a29ea772675852);
+            
+        
+
+        marker_70df5892bf91da7266f6906d4f080070.bindPopup(popup_634caac2c2b26791af3e65f4b2a21874)
+        ;
+
+        
+    
+    
+            var marker_1523a9a39d3ed8626a5ed9ce1480318f = L.marker(
+                [35.8685175090655, 128.589923786664],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_4ed3e7f42dcf45002b016c828dc4113a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_661738b2ae4071127d656f615c145877 = $(`<div id="html_661738b2ae4071127d656f615c145877" style="width: 100.0%; height: 100.0%;"><b>대구약령시한의약박물관</b><br>주소: 대구 중구 달구벌대로415길 49<br>⭐ 정보 없음</div>`)[0];
+                popup_4ed3e7f42dcf45002b016c828dc4113a.setContent(html_661738b2ae4071127d656f615c145877);
+            
+        
+
+        marker_1523a9a39d3ed8626a5ed9ce1480318f.bindPopup(popup_4ed3e7f42dcf45002b016c828dc4113a)
+        ;
+
+        
+    
+    
+            var marker_a778efe9b5d22806ead2873b1f52b79c = L.marker(
+                [35.8733380355897, 128.594183153561],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_40bcc0700be9c04f4a4ac0c4788b2097 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ad493fbce3cb67c8d1f6425007adc57 = $(`<div id="html_1ad493fbce3cb67c8d1f6425007adc57" style="width: 100.0%; height: 100.0%;"><b>향촌문화관</b><br>주소: 대구 중구 중앙대로 449<br>⭐ 정보 없음</div>`)[0];
+                popup_40bcc0700be9c04f4a4ac0c4788b2097.setContent(html_1ad493fbce3cb67c8d1f6425007adc57);
+            
+        
+
+        marker_a778efe9b5d22806ead2873b1f52b79c.bindPopup(popup_40bcc0700be9c04f4a4ac0c4788b2097)
+        ;
+
+        
+    
+    
+            var marker_7723fcc3827e81e67bb4929535986fc3 = L.marker(
+                [35.87585715206452, 128.59381178148206],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_5f4bd1c7734f31bc5ae1f02651d0d404 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c26ba1e34b6b2eaf585e169861001d3 = $(`<div id="html_7c26ba1e34b6b2eaf585e169861001d3" style="width: 100.0%; height: 100.0%;"><b>대구콘서트하우스</b><br>주소: 대구 중구 태평로 141<br>⭐ 정보 없음</div>`)[0];
+                popup_5f4bd1c7734f31bc5ae1f02651d0d404.setContent(html_7c26ba1e34b6b2eaf585e169861001d3);
+            
+        
+
+        marker_7723fcc3827e81e67bb4929535986fc3.bindPopup(popup_5f4bd1c7734f31bc5ae1f02651d0d404)
+        ;
+
+        
+    
+    
+            var marker_9bcd9734701dade7a4d0925b24119e4d = L.marker(
+                [35.8706649167601, 128.589448547683],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_5675f1a56111545ed56148616407a298 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3cbc2695d44348719d53698a4792eff0 = $(`<div id="html_3cbc2695d44348719d53698a4792eff0" style="width: 100.0%; height: 100.0%;"><b>오오극장</b><br>주소: 대구 중구 국채보상로 537<br>⭐ 정보 없음</div>`)[0];
+                popup_5675f1a56111545ed56148616407a298.setContent(html_3cbc2695d44348719d53698a4792eff0);
+            
+        
+
+        marker_9bcd9734701dade7a4d0925b24119e4d.bindPopup(popup_5675f1a56111545ed56148616407a298)
+        ;
+
+        
+    
+    
+            var marker_eb7cf030c14a4388505e6e0bacae0ec7 = L.marker(
+                [35.8683750764117, 128.593871151294],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_021b332dfab146e732bd42d221083b43 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_410e07df7448aed490cadb5c500dff18 = $(`<div id="html_410e07df7448aed490cadb5c500dff18" style="width: 100.0%; height: 100.0%;"><b>문화예술전용극장CT</b><br>주소: 대구 중구 중앙대로 394<br>⭐ 정보 없음</div>`)[0];
+                popup_021b332dfab146e732bd42d221083b43.setContent(html_410e07df7448aed490cadb5c500dff18);
+            
+        
+
+        marker_eb7cf030c14a4388505e6e0bacae0ec7.bindPopup(popup_021b332dfab146e732bd42d221083b43)
+        ;
+
+        
+    
+    
+            var marker_9c905e9f9ccd1f4007604b5ef88c242c = L.marker(
+                [35.8734399043487, 128.59546953731],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_ff4c2754e99a388fe1a1ec73a005fae4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4da1d9f222c8483ca85f0fbd93f1f1d2 = $(`<div id="html_4da1d9f222c8483ca85f0fbd93f1f1d2" style="width: 100.0%; height: 100.0%;"><b>송죽씨어터</b><br>주소: 대구 중구 교동길 15<br>⭐ 정보 없음</div>`)[0];
+                popup_ff4c2754e99a388fe1a1ec73a005fae4.setContent(html_4da1d9f222c8483ca85f0fbd93f1f1d2);
+            
+        
+
+        marker_9c905e9f9ccd1f4007604b5ef88c242c.bindPopup(popup_ff4c2754e99a388fe1a1ec73a005fae4)
+        ;
+
+        
+    
+    
+            var marker_031529f9f26e1b51eb9ce7f5cd2929ae = L.marker(
+                [35.87340779713581, 128.5940871185858],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_5d5f80c5be59a2598a03aed20b95585e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dd43520a0b4363d7571352729e62449a = $(`<div id="html_dd43520a0b4363d7571352729e62449a" style="width: 100.0%; height: 100.0%;"><b>대구문학관</b><br>주소: 대구 중구 중앙대로 449<br>⭐ 정보 없음</div>`)[0];
+                popup_5d5f80c5be59a2598a03aed20b95585e.setContent(html_dd43520a0b4363d7571352729e62449a);
+            
+        
+
+        marker_031529f9f26e1b51eb9ce7f5cd2929ae.bindPopup(popup_5d5f80c5be59a2598a03aed20b95585e)
+        ;
+
+        
+    
+    
+            var marker_a80e037b81c3cb0e1ba304c3e007f8b0 = L.marker(
+                [35.88523645774041, 128.5897840332514],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_15550d6ba5343ae99989245540c75118 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b957a1a6b30572493de69af432063531 = $(`<div id="html_b957a1a6b30572493de69af432063531" style="width: 100.0%; height: 100.0%;"><b>CGV 대구</b><br>주소: 대구 북구 침산로 93<br>⭐ 정보 없음</div>`)[0];
+                popup_15550d6ba5343ae99989245540c75118.setContent(html_b957a1a6b30572493de69af432063531);
+            
+        
+
+        marker_a80e037b81c3cb0e1ba304c3e007f8b0.bindPopup(popup_15550d6ba5343ae99989245540c75118)
+        ;
+
+        
+    
+    
+            var marker_da1fbaf72ca4317e152b0171ae4201cc = L.marker(
+                [35.8669867730726, 128.597439210847],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_59ba001da70ecd7d11ffb76ef7e84606 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b4fc0f28a12acffad9a2c2063668fd25 = $(`<div id="html_b4fc0f28a12acffad9a2c2063668fd25" style="width: 100.0%; height: 100.0%;"><b>여우별아트홀</b><br>주소: 대구 중구 동성로3길 35<br>⭐ 정보 없음</div>`)[0];
+                popup_59ba001da70ecd7d11ffb76ef7e84606.setContent(html_b4fc0f28a12acffad9a2c2063668fd25);
+            
+        
+
+        marker_da1fbaf72ca4317e152b0171ae4201cc.bindPopup(popup_59ba001da70ecd7d11ffb76ef7e84606)
+        ;
+
+        
+    
+    
+            var marker_4ab78ee5d09c021d70295e00f71159d5 = L.marker(
+                [35.8687645963152, 128.598735917344],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_569a000fdd9cfde14403ee54a2c038ba = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8249d6485c33771de74ff74a6eef1d07 = $(`<div id="html_8249d6485c33771de74ff74a6eef1d07" style="width: 100.0%; height: 100.0%;"><b>스파크랜드</b><br>주소: 대구 중구 동성로6길 61<br>⭐ 정보 없음</div>`)[0];
+                popup_569a000fdd9cfde14403ee54a2c038ba.setContent(html_8249d6485c33771de74ff74a6eef1d07);
+            
+        
+
+        marker_4ab78ee5d09c021d70295e00f71159d5.bindPopup(popup_569a000fdd9cfde14403ee54a2c038ba)
+        ;
+
+        
+    
+    
+            var marker_1a340712361235dcdd3a46652f44db98 = L.marker(
+                [35.8715210172093, 128.590944823434],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_14a41f70d89038f24276aca69e685a29 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d68a913f5d7cdb521578dcbe599fa45d = $(`<div id="html_d68a913f5d7cdb521578dcbe599fa45d" style="width: 100.0%; height: 100.0%;"><b>대구근대화골목</b><br>주소: 대구 중구 서문로1가 84<br>⭐ 정보 없음</div>`)[0];
+                popup_14a41f70d89038f24276aca69e685a29.setContent(html_d68a913f5d7cdb521578dcbe599fa45d);
+            
+        
+
+        marker_1a340712361235dcdd3a46652f44db98.bindPopup(popup_14a41f70d89038f24276aca69e685a29)
+        ;
+
+        
+    
+    
+            var marker_8b6b331603fe377a67a8e1191d8d87e3 = L.marker(
+                [35.8688151842351, 128.59302969284],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_b19597335fa4de760872ce764f1e92d6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2df1cfbf160314a2bdd83c6e265a5291 = $(`<div id="html_2df1cfbf160314a2bdd83c6e265a5291" style="width: 100.0%; height: 100.0%;"><b>크레이지팡팡</b><br>주소: 대구 중구 진골목길 32<br>⭐ 정보 없음</div>`)[0];
+                popup_b19597335fa4de760872ce764f1e92d6.setContent(html_2df1cfbf160314a2bdd83c6e265a5291);
+            
+        
+
+        marker_8b6b331603fe377a67a8e1191d8d87e3.bindPopup(popup_b19597335fa4de760872ce764f1e92d6)
+        ;
+
+        
+    
+    
+            var marker_7ad4e52d949e2bb156e86256967f47af = L.marker(
+                [35.86787456857416, 128.59029621649205],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_ffdb3ab53dca6dcd9442ad0ebe7a8e32 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd8cf6973fd8b53942c14a79b982619d = $(`<div id="html_fd8cf6973fd8b53942c14a79b982619d" style="width: 100.0%; height: 100.0%;"><b>대구중구골목투어 근대문화골목(2코스)</b><br>주소: 대구 중구 장관동 55-1<br>⭐ 정보 없음</div>`)[0];
+                popup_ffdb3ab53dca6dcd9442ad0ebe7a8e32.setContent(html_fd8cf6973fd8b53942c14a79b982619d);
+            
+        
+
+        marker_7ad4e52d949e2bb156e86256967f47af.bindPopup(popup_ffdb3ab53dca6dcd9442ad0ebe7a8e32)
+        ;
+
+        
+    
+    
+            var marker_5438dd30d2efa5c89984e56969bb3db4 = L.marker(
+                [35.8685446277862, 128.588623457122],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_134f75c879d49c2b89a2c9571b45546c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_095fa700e9ef3ce10a1d8a847b36abeb = $(`<div id="html_095fa700e9ef3ce10a1d8a847b36abeb" style="width: 100.0%; height: 100.0%;"><b>대구약전골목</b><br>주소: 대구 중구 남성로 158-1<br>⭐ 정보 없음</div>`)[0];
+                popup_134f75c879d49c2b89a2c9571b45546c.setContent(html_095fa700e9ef3ce10a1d8a847b36abeb);
+            
+        
+
+        marker_5438dd30d2efa5c89984e56969bb3db4.bindPopup(popup_134f75c879d49c2b89a2c9571b45546c)
+        ;
+
+        
+    
+    
+            var marker_98db56a5c4105472ef31816f5c3c5824 = L.marker(
+                [35.8687878820119, 128.592914005005],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_92d1b47cd6bf4864e8ff9df8d0a384ec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5351ed8bad1329554f041c70b48956a0 = $(`<div id="html_5351ed8bad1329554f041c70b48956a0" style="width: 100.0%; height: 100.0%;"><b>대구진골목</b><br>주소: 대구 중구 중앙대로 403<br>⭐ 정보 없음</div>`)[0];
+                popup_92d1b47cd6bf4864e8ff9df8d0a384ec.setContent(html_5351ed8bad1329554f041c70b48956a0);
+            
+        
+
+        marker_98db56a5c4105472ef31816f5c3c5824.bindPopup(popup_92d1b47cd6bf4864e8ff9df8d0a384ec)
+        ;
+
+        
+    
+    
+            var marker_f81683bc5174503f62c7aea025314480 = L.marker(
+                [35.8677853290153, 128.589957870428],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_deb02a442407c5c6d5ceed650a00690f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_40f7a3be31659a660fbb96af69d52356 = $(`<div id="html_40f7a3be31659a660fbb96af69d52356" style="width: 100.0%; height: 100.0%;"><b>대구약령시문화거리</b><br>주소: 대구 중구 남성로 158-1<br>⭐ 정보 없음</div>`)[0];
+                popup_deb02a442407c5c6d5ceed650a00690f.setContent(html_40f7a3be31659a660fbb96af69d52356);
+            
+        
+
+        marker_f81683bc5174503f62c7aea025314480.bindPopup(popup_deb02a442407c5c6d5ceed650a00690f)
+        ;
+
+        
+    
+    
+            var marker_da1b863280e76601b965a6cb8156732c = L.marker(
+                [35.874476408173, 128.586885112207],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_7d54d3104e5d0ac3aa8be274a353fdcd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7d76521fb7d6d2817f6294e14842f69 = $(`<div id="html_a7d76521fb7d6d2817f6294e14842f69" style="width: 100.0%; height: 100.0%;"><b>북성로 연탄불고기골목</b><br>주소: 대구 중구 달성로22길 88<br>⭐ 정보 없음</div>`)[0];
+                popup_7d54d3104e5d0ac3aa8be274a353fdcd.setContent(html_a7d76521fb7d6d2817f6294e14842f69);
+            
+        
+
+        marker_da1b863280e76601b965a6cb8156732c.bindPopup(popup_7d54d3104e5d0ac3aa8be274a353fdcd)
+        ;
+
+        
+    
+    
+            var marker_8128a78da7944df2202efc9ded5881b2 = L.marker(
+                [35.8729738608173, 128.59663380755],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_686ba6a2af41c1cabae596f36d31ab7d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bbdb637ee67187a4b7f5994336247ab3 = $(`<div id="html_bbdb637ee67187a4b7f5994336247ab3" style="width: 100.0%; height: 100.0%;"><b>교동먹거리타운</b><br>주소: 대구 중구 교동<br>⭐ 정보 없음</div>`)[0];
+                popup_686ba6a2af41c1cabae596f36d31ab7d.setContent(html_bbdb637ee67187a4b7f5994336247ab3);
+            
+        
+
+        marker_8128a78da7944df2202efc9ded5881b2.bindPopup(popup_686ba6a2af41c1cabae596f36d31ab7d)
+        ;
+
+        
+    
+    
+            var marker_49852b600dcf1b82f82e5589602a32ef = L.marker(
+                [35.8662093881386, 128.598703402542],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_6cac935b437bd51a2b11752d0849646d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1740f37b6d028a058ed2bdeb181070f8 = $(`<div id="html_1740f37b6d028a058ed2bdeb181070f8" style="width: 100.0%; height: 100.0%;"><b>동성로로데오거리</b><br>주소: 대구 중구 삼덕동1가 83<br>⭐ 정보 없음</div>`)[0];
+                popup_6cac935b437bd51a2b11752d0849646d.setContent(html_1740f37b6d028a058ed2bdeb181070f8);
+            
+        
+
+        marker_49852b600dcf1b82f82e5589602a32ef.bindPopup(popup_6cac935b437bd51a2b11752d0849646d)
+        ;
+
+        
+    
+    
+            var marker_e2284abfac23145c27e1ed982f330749 = L.marker(
+                [35.8738436251835, 128.596553829378],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_05b7b9262fd37e5ca295dc9b9a0ae64e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71af988473faafb26984e1ff86b5ce2f = $(`<div id="html_71af988473faafb26984e1ff86b5ce2f" style="width: 100.0%; height: 100.0%;"><b>교동귀금속거리</b><br>주소: 대구 중구 용덕동<br>⭐ 정보 없음</div>`)[0];
+                popup_05b7b9262fd37e5ca295dc9b9a0ae64e.setContent(html_71af988473faafb26984e1ff86b5ce2f);
+            
+        
+
+        marker_e2284abfac23145c27e1ed982f330749.bindPopup(popup_05b7b9262fd37e5ca295dc9b9a0ae64e)
+        ;
+
+        
+    
+    
+            var marker_9e7a56ee50c272063fa71a409ef6a94b = L.marker(
+                [35.8744690698467, 128.590981632295],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_f2cc12077b6df19b36a628fd4a14afd1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8a2dc08c14dd9b78405cc569b89d860e = $(`<div id="html_8a2dc08c14dd9b78405cc569b89d860e" style="width: 100.0%; height: 100.0%;"><b>북성공구골목</b><br>주소: 대구 중구 태평로3가<br>⭐ 정보 없음</div>`)[0];
+                popup_f2cc12077b6df19b36a628fd4a14afd1.setContent(html_8a2dc08c14dd9b78405cc569b89d860e);
+            
+        
+
+        marker_9e7a56ee50c272063fa71a409ef6a94b.bindPopup(popup_f2cc12077b6df19b36a628fd4a14afd1)
+        ;
+
+        
+    
+    
+            var marker_6f136b8847edc5266bf59e76532f6c42 = L.marker(
+                [35.8731552689367, 128.594374356402],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_7597f6a72e27baf600f1318ff0417c0b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d63e810626c49cc5971292ddf90da851 = $(`<div id="html_d63e810626c49cc5971292ddf90da851" style="width: 100.0%; height: 100.0%;"><b>대구수제화골목</b><br>주소: 대구 중구 향촌동 9-2<br>⭐ 정보 없음</div>`)[0];
+                popup_7597f6a72e27baf600f1318ff0417c0b.setContent(html_d63e810626c49cc5971292ddf90da851);
+            
+        
+
+        marker_6f136b8847edc5266bf59e76532f6c42.bindPopup(popup_7597f6a72e27baf600f1318ff0417c0b)
+        ;
+
+        
+    
+    
+            var marker_019a050f465cc43d0b49eba08c9e86f7 = L.marker(
+                [35.8711279887378, 128.60504217131],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_0fd88b7a5b4e12a07f35bfbd74763bb3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b0fd319328746df96a1e955ae48ebd5 = $(`<div id="html_1b0fd319328746df96a1e955ae48ebd5" style="width: 100.0%; height: 100.0%;"><b>동인동찜갈비골목</b><br>주소: 대구 중구 동덕로36길 9-17<br>⭐ 정보 없음</div>`)[0];
+                popup_0fd88b7a5b4e12a07f35bfbd74763bb3.setContent(html_1b0fd319328746df96a1e955ae48ebd5);
+            
+        
+
+        marker_019a050f465cc43d0b49eba08c9e86f7.bindPopup(popup_0fd88b7a5b4e12a07f35bfbd74763bb3)
+        ;
+
+        
+    
+    
+            var marker_89955e9bebef4db853bb554712ffaeaa = L.marker(
+                [35.8720389991162, 128.583935700663],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_0e728e137c00e3042745689f16f92cb9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fca7c4cc879a803ecc8150da483d517b = $(`<div id="html_fca7c4cc879a803ecc8150da483d517b" style="width: 100.0%; height: 100.0%;"><b>오토바이골목</b><br>주소: 대구 중구 인교동<br>⭐ 정보 없음</div>`)[0];
+                popup_0e728e137c00e3042745689f16f92cb9.setContent(html_fca7c4cc879a803ecc8150da483d517b);
+            
+        
+
+        marker_89955e9bebef4db853bb554712ffaeaa.bindPopup(popup_0e728e137c00e3042745689f16f92cb9)
+        ;
+
+        
+    
+    
+            var marker_766d8ad86868473a6259010ef4f28e2b = L.marker(
+                [35.87073988674746, 128.5886861082294],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_3335a9c1f8ac94b32e384244a8292d36 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f587e9fedc0c2b908f487bf4e8adef51 = $(`<div id="html_f587e9fedc0c2b908f487bf4e8adef51" style="width: 100.0%; height: 100.0%;"><b>곽병원</b><br>주소: 대구 중구 국채보상로 531<br>⭐ 정보 없음</div>`)[0];
+                popup_3335a9c1f8ac94b32e384244a8292d36.setContent(html_f587e9fedc0c2b908f487bf4e8adef51);
+            
+        
+
+        marker_766d8ad86868473a6259010ef4f28e2b.bindPopup(popup_3335a9c1f8ac94b32e384244a8292d36)
+        ;
+
+        
+    
+    
+            var marker_0e2a784a4351e24608724dab00a14807 = L.marker(
+                [35.86949979790328, 128.58296179946402],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_82e50c91225cd1a9013533a2bd2e94bc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bf8ede5c6435bb5621dc868a6645b755 = $(`<div id="html_bf8ede5c6435bb5621dc868a6645b755" style="width: 100.0%; height: 100.0%;"><b>계명대학교 대구동산병원</b><br>주소: 대구 중구 달성로 56<br>⭐ 정보 없음</div>`)[0];
+                popup_82e50c91225cd1a9013533a2bd2e94bc.setContent(html_bf8ede5c6435bb5621dc868a6645b755);
+            
+        
+
+        marker_0e2a784a4351e24608724dab00a14807.bindPopup(popup_82e50c91225cd1a9013533a2bd2e94bc)
+        ;
+
+        
+    
+    
+            var marker_68d817a003a59a3f987cbcb72a7ded59 = L.marker(
+                [35.870037402966226, 128.58933636935143],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_3a837a5f6c978f2b85abab608215b3a1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7739f03e1cb3d1cd7fe867a84cb3bf6e = $(`<div id="html_7739f03e1cb3d1cd7fe867a84cb3bf6e" style="width: 100.0%; height: 100.0%;"><b>으뜸병원</b><br>주소: 대구 중구 국채보상로 536<br>⭐ 정보 없음</div>`)[0];
+                popup_3a837a5f6c978f2b85abab608215b3a1.setContent(html_7739f03e1cb3d1cd7fe867a84cb3bf6e);
+            
+        
+
+        marker_68d817a003a59a3f987cbcb72a7ded59.bindPopup(popup_3a837a5f6c978f2b85abab608215b3a1)
+        ;
+
+        
+    
+    
+            var marker_3e5b782cda7be9399a918479638ca626 = L.marker(
+                [35.8705480114377, 128.586567615321],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_0c72ef944c73d42f9fd401716aa67eb9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_25536096862ca89cb237964eb99a8387 = $(`<div id="html_25536096862ca89cb237964eb99a8387" style="width: 100.0%; height: 100.0%;"><b>로이스덕영치과병원</b><br>주소: 대구 중구 국채보상로 511<br>⭐ 정보 없음</div>`)[0];
+                popup_0c72ef944c73d42f9fd401716aa67eb9.setContent(html_25536096862ca89cb237964eb99a8387);
+            
+        
+
+        marker_3e5b782cda7be9399a918479638ca626.bindPopup(popup_0c72ef944c73d42f9fd401716aa67eb9)
+        ;
+
+        
+    
+    
+            var marker_bcfb122a5f3c2b3a096e1d91760fd3f6 = L.marker(
+                [35.869388068306165, 128.59508493433472],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_ce0c8a50f5a6739c20240874455a6721 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_32ff5c00697022d2ab0a22e7ea56dade = $(`<div id="html_32ff5c00697022d2ab0a22e7ea56dade" style="width: 100.0%; height: 100.0%;"><b>예쁨주의쁨의원 대구중앙로점</b><br>주소: 대구 중구 동성로 25<br>⭐ 정보 없음</div>`)[0];
+                popup_ce0c8a50f5a6739c20240874455a6721.setContent(html_32ff5c00697022d2ab0a22e7ea56dade);
+            
+        
+
+        marker_bcfb122a5f3c2b3a096e1d91760fd3f6.bindPopup(popup_ce0c8a50f5a6739c20240874455a6721)
+        ;
+
+        
+    
+    
+            var marker_e956fb931b56da493c440686b4aebec1 = L.marker(
+                [35.86631656350222, 128.59280696696663],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_1d9026b91ac21950191d9de1c4185f82 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f5f0bc63c9533a3cb1957e38f0978d6 = $(`<div id="html_9f5f0bc63c9533a3cb1957e38f0978d6" style="width: 100.0%; height: 100.0%;"><b>대구차여성의원</b><br>주소: 대구 중구 달구벌대로 2095<br>⭐ 정보 없음</div>`)[0];
+                popup_1d9026b91ac21950191d9de1c4185f82.setContent(html_9f5f0bc63c9533a3cb1957e38f0978d6);
+            
+        
+
+        marker_e956fb931b56da493c440686b4aebec1.bindPopup(popup_1d9026b91ac21950191d9de1c4185f82)
+        ;
+
+        
+    
+    
+            var marker_a20dbfe38c5e5bdaf743c2334488309a = L.marker(
+                [35.8704890177665, 128.595374935352],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_c4b23a1a179a31c7da223dc2646a27a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_32d5282cf3ba7afe458f3dee1ddd4cbf = $(`<div id="html_32d5282cf3ba7afe458f3dee1ddd4cbf" style="width: 100.0%; height: 100.0%;"><b>대구동성로예쁨주의쁨의원</b><br>주소: 대구 중구 동성로 39<br>⭐ 정보 없음</div>`)[0];
+                popup_c4b23a1a179a31c7da223dc2646a27a2.setContent(html_32d5282cf3ba7afe458f3dee1ddd4cbf);
+            
+        
+
+        marker_a20dbfe38c5e5bdaf743c2334488309a.bindPopup(popup_c4b23a1a179a31c7da223dc2646a27a2)
+        ;
+
+        
+    
+    
+            var marker_9097e78cbc5aba36be054b5b51db930b = L.marker(
+                [35.8701436922386, 128.59674530063194],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_44eabf22cf4f5dede3af5fb6c2fd83cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d83c2988525aa46aee8c4937889b4f13 = $(`<div id="html_d83c2988525aa46aee8c4937889b4f13" style="width: 100.0%; height: 100.0%;"><b>비엘성형외과의원</b><br>주소: 대구 중구 동성로2길 95<br>⭐ 정보 없음</div>`)[0];
+                popup_44eabf22cf4f5dede3af5fb6c2fd83cb.setContent(html_d83c2988525aa46aee8c4937889b4f13);
+            
+        
+
+        marker_9097e78cbc5aba36be054b5b51db930b.bindPopup(popup_44eabf22cf4f5dede3af5fb6c2fd83cb)
+        ;
+
+        
+    
+    
+            var marker_6f00e97420478a53c905f22bf5dfd114 = L.marker(
+                [35.86656629756646, 128.58605645951067],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_08d7eee0b6671b358255db4a3975bee9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_af605ce36faf165849a285b8add067ce = $(`<div id="html_af605ce36faf165849a285b8add067ce" style="width: 100.0%; height: 100.0%;"><b>대구자생한방병원</b><br>주소: 대구 중구 달구벌대로 2033<br>⭐ 정보 없음</div>`)[0];
+                popup_08d7eee0b6671b358255db4a3975bee9.setContent(html_af605ce36faf165849a285b8add067ce);
+            
+        
+
+        marker_6f00e97420478a53c905f22bf5dfd114.bindPopup(popup_08d7eee0b6671b358255db4a3975bee9)
+        ;
+
+        
+    
+    
+            var marker_03ccff86c82c36bd32fdde5bbc02eb25 = L.marker(
+                [35.867008520811865, 128.5946497502287],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_3b31d7c725023e970977db2f10cd1a57 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_90559144f3e360e7ee78aaa5dcdbc636 = $(`<div id="html_90559144f3e360e7ee78aaa5dcdbc636" style="width: 100.0%; height: 100.0%;"><b>리봄한방병원 대구점</b><br>주소: 대구 중구 동성로1길 15<br>⭐ 정보 없음</div>`)[0];
+                popup_3b31d7c725023e970977db2f10cd1a57.setContent(html_90559144f3e360e7ee78aaa5dcdbc636);
+            
+        
+
+        marker_03ccff86c82c36bd32fdde5bbc02eb25.bindPopup(popup_3b31d7c725023e970977db2f10cd1a57)
+        ;
+
+        
+    
+    
+            var marker_83bfa9c9451575b9f52a2596594e131a = L.marker(
+                [35.8692569716649, 128.601280036859],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_13d33a556bb90e772f5ba504dd94336e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ebafe42521f9f80fa209f847a8091d32 = $(`<div id="html_ebafe42521f9f80fa209f847a8091d32" style="width: 100.0%; height: 100.0%;"><b>대구우리들병원</b><br>주소: 대구 중구 국채보상로 648<br>⭐ 정보 없음</div>`)[0];
+                popup_13d33a556bb90e772f5ba504dd94336e.setContent(html_ebafe42521f9f80fa209f847a8091d32);
+            
+        
+
+        marker_83bfa9c9451575b9f52a2596594e131a.bindPopup(popup_13d33a556bb90e772f5ba504dd94336e)
+        ;
+
+        
+    
+    
+            var marker_1d23b82d76a6958618c9bccb788d6f9e = L.marker(
+                [35.8662655663843, 128.595020130386],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_eaebff5346f8dc948be03110355c9ba5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7de0f829c6ed8ab3e8ebad0f1204a653 = $(`<div id="html_7de0f829c6ed8ab3e8ebad0f1204a653" style="width: 100.0%; height: 100.0%;"><b>엣지성형외과</b><br>주소: 대구 중구 동성로1길 28<br>⭐ 정보 없음</div>`)[0];
+                popup_eaebff5346f8dc948be03110355c9ba5.setContent(html_7de0f829c6ed8ab3e8ebad0f1204a653);
+            
+        
+
+        marker_1d23b82d76a6958618c9bccb788d6f9e.bindPopup(popup_eaebff5346f8dc948be03110355c9ba5)
+        ;
+
+        
+    
+    
+            var marker_d15793d8bf96036590f4024d235021b7 = L.marker(
+                [35.8690729668535, 128.593297243804],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_6b50af36fdfda429658373dfa491c78a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c045b03c48db58bf24832b9fbc878a24 = $(`<div id="html_c045b03c48db58bf24832b9fbc878a24" style="width: 100.0%; height: 100.0%;"><b>블리비의원 대구동성로점</b><br>주소: 대구 중구 중앙대로 403<br>⭐ 정보 없음</div>`)[0];
+                popup_6b50af36fdfda429658373dfa491c78a.setContent(html_c045b03c48db58bf24832b9fbc878a24);
+            
+        
+
+        marker_d15793d8bf96036590f4024d235021b7.bindPopup(popup_6b50af36fdfda429658373dfa491c78a)
+        ;
+
+        
+    
+    
+            var marker_c7f2af84270a845fa9bc6c432f48fb09 = L.marker(
+                [35.869980397943884, 128.59431737938567],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_2b41dfbcf1b14f0dcbc6c5182680c4dc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_976ccf24180e56c0888017e3adf41e4a = $(`<div id="html_976ccf24180e56c0888017e3adf41e4a" style="width: 100.0%; height: 100.0%;"><b>대구중앙로센텀치과의원</b><br>주소: 대구 중구 중앙대로 412<br>⭐ 정보 없음</div>`)[0];
+                popup_2b41dfbcf1b14f0dcbc6c5182680c4dc.setContent(html_976ccf24180e56c0888017e3adf41e4a);
+            
+        
+
+        marker_c7f2af84270a845fa9bc6c432f48fb09.bindPopup(popup_2b41dfbcf1b14f0dcbc6c5182680c4dc)
+        ;
+
+        
+    
+    
+            var marker_917974b77bb60f0ea4025abbd5fca86f = L.marker(
+                [35.86506677374961, 128.59279966591598],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_cad6902b8a37d0a3980fe6af6647e98e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e399f8fc01f35c75c74694d06bdff34a = $(`<div id="html_e399f8fc01f35c75c74694d06bdff34a" style="width: 100.0%; height: 100.0%;"><b>대구퍼스트치과의원</b><br>주소: 대구 중구 중앙대로 359<br>⭐ 정보 없음</div>`)[0];
+                popup_cad6902b8a37d0a3980fe6af6647e98e.setContent(html_e399f8fc01f35c75c74694d06bdff34a);
+            
+        
+
+        marker_917974b77bb60f0ea4025abbd5fca86f.bindPopup(popup_cad6902b8a37d0a3980fe6af6647e98e)
+        ;
+
+        
+    
+    
+            var marker_4eb1f8cbd8f53408f22e91a2c71f5e06 = L.marker(
+                [35.87073988674746, 128.5886861082294],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_92b7cb3645afb17910ca147f5f323183 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f72ecc613e6b685969b7174abbbc678b = $(`<div id="html_f72ecc613e6b685969b7174abbbc678b" style="width: 100.0%; height: 100.0%;"><b>곽병원</b><br>주소: 대구 중구 국채보상로 531<br>⭐ 정보 없음</div>`)[0];
+                popup_92b7cb3645afb17910ca147f5f323183.setContent(html_f72ecc613e6b685969b7174abbbc678b);
+            
+        
+
+        marker_4eb1f8cbd8f53408f22e91a2c71f5e06.bindPopup(popup_92b7cb3645afb17910ca147f5f323183)
+        ;
+
+        
+    
+    
+            var marker_405425c645dad24f8d11087ff6ca4a22 = L.marker(
+                [35.86949979790328, 128.58296179946402],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_4999a16fd68c9b33e46278d5c895368c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac6af2eeea8abc3e1e9cf2e14874d732 = $(`<div id="html_ac6af2eeea8abc3e1e9cf2e14874d732" style="width: 100.0%; height: 100.0%;"><b>계명대학교 대구동산병원</b><br>주소: 대구 중구 달성로 56<br>⭐ 정보 없음</div>`)[0];
+                popup_4999a16fd68c9b33e46278d5c895368c.setContent(html_ac6af2eeea8abc3e1e9cf2e14874d732);
+            
+        
+
+        marker_405425c645dad24f8d11087ff6ca4a22.bindPopup(popup_4999a16fd68c9b33e46278d5c895368c)
+        ;
+
+        
+    
+    
+            var marker_277200af4526d1e13a5eb559d40c4499 = L.marker(
+                [35.870037402966226, 128.58933636935143],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_d75a7c95e5fc4d51cd89c7cac78094f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_743f0565745730c6fcb7680b0d243708 = $(`<div id="html_743f0565745730c6fcb7680b0d243708" style="width: 100.0%; height: 100.0%;"><b>으뜸병원</b><br>주소: 대구 중구 국채보상로 536<br>⭐ 정보 없음</div>`)[0];
+                popup_d75a7c95e5fc4d51cd89c7cac78094f1.setContent(html_743f0565745730c6fcb7680b0d243708);
+            
+        
+
+        marker_277200af4526d1e13a5eb559d40c4499.bindPopup(popup_d75a7c95e5fc4d51cd89c7cac78094f1)
+        ;
+
+        
+    
+    
+            var marker_99bf146aed0cde7ab3cabfc14f72465d = L.marker(
+                [35.8705480114377, 128.586567615321],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_159034c5ffb59c7bee277ace356ad54a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2d434c1d0b4e963fa9f04cffeb6eadbf = $(`<div id="html_2d434c1d0b4e963fa9f04cffeb6eadbf" style="width: 100.0%; height: 100.0%;"><b>로이스덕영치과병원</b><br>주소: 대구 중구 국채보상로 511<br>⭐ 정보 없음</div>`)[0];
+                popup_159034c5ffb59c7bee277ace356ad54a.setContent(html_2d434c1d0b4e963fa9f04cffeb6eadbf);
+            
+        
+
+        marker_99bf146aed0cde7ab3cabfc14f72465d.bindPopup(popup_159034c5ffb59c7bee277ace356ad54a)
+        ;
+
+        
+    
+    
+            var marker_8b20cd7146e8490de87dc1f54aac20d4 = L.marker(
+                [35.869388068306165, 128.59508493433472],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_382b2dd39314a6d3f1741c0be2f40df5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b574a4f92e054b01fd3359fa4d89d84 = $(`<div id="html_8b574a4f92e054b01fd3359fa4d89d84" style="width: 100.0%; height: 100.0%;"><b>예쁨주의쁨의원 대구중앙로점</b><br>주소: 대구 중구 동성로 25<br>⭐ 정보 없음</div>`)[0];
+                popup_382b2dd39314a6d3f1741c0be2f40df5.setContent(html_8b574a4f92e054b01fd3359fa4d89d84);
+            
+        
+
+        marker_8b20cd7146e8490de87dc1f54aac20d4.bindPopup(popup_382b2dd39314a6d3f1741c0be2f40df5)
+        ;
+
+        
+    
+    
+            var marker_c40857a111a1e7601cf50a8f0b175abd = L.marker(
+                [35.86631656350222, 128.59280696696663],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_3f6c0b3e9e8a0e346b7805bf306c7eba = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_55ec7455e6bfef183ac1e4c445b99099 = $(`<div id="html_55ec7455e6bfef183ac1e4c445b99099" style="width: 100.0%; height: 100.0%;"><b>대구차여성의원</b><br>주소: 대구 중구 달구벌대로 2095<br>⭐ 정보 없음</div>`)[0];
+                popup_3f6c0b3e9e8a0e346b7805bf306c7eba.setContent(html_55ec7455e6bfef183ac1e4c445b99099);
+            
+        
+
+        marker_c40857a111a1e7601cf50a8f0b175abd.bindPopup(popup_3f6c0b3e9e8a0e346b7805bf306c7eba)
+        ;
+
+        
+    
+    
+            var marker_5a53cf477e30339946ae88fe2d040e78 = L.marker(
+                [35.8704890177665, 128.595374935352],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_b7b56e31a171f348f30c21e508ad4aa5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0841acd40f4778c958408dfd94990a2e = $(`<div id="html_0841acd40f4778c958408dfd94990a2e" style="width: 100.0%; height: 100.0%;"><b>대구동성로예쁨주의쁨의원</b><br>주소: 대구 중구 동성로 39<br>⭐ 정보 없음</div>`)[0];
+                popup_b7b56e31a171f348f30c21e508ad4aa5.setContent(html_0841acd40f4778c958408dfd94990a2e);
+            
+        
+
+        marker_5a53cf477e30339946ae88fe2d040e78.bindPopup(popup_b7b56e31a171f348f30c21e508ad4aa5)
+        ;
+
+        
+    
+    
+            var marker_4fba9e5f6d3ab063cc5cc4fdc2a4d54e = L.marker(
+                [35.8701436922386, 128.59674530063194],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_bdb2c8b2a290eaeee0b82266afe92d57 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe524534168ced1de3b2dd0dec6e506f = $(`<div id="html_fe524534168ced1de3b2dd0dec6e506f" style="width: 100.0%; height: 100.0%;"><b>비엘성형외과의원</b><br>주소: 대구 중구 동성로2길 95<br>⭐ 정보 없음</div>`)[0];
+                popup_bdb2c8b2a290eaeee0b82266afe92d57.setContent(html_fe524534168ced1de3b2dd0dec6e506f);
+            
+        
+
+        marker_4fba9e5f6d3ab063cc5cc4fdc2a4d54e.bindPopup(popup_bdb2c8b2a290eaeee0b82266afe92d57)
+        ;
+
+        
+    
+    
+            var marker_a3e9db86ef0fd1f1660dcb5e139dde22 = L.marker(
+                [35.86656629756646, 128.58605645951067],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_b893336bd539bec000306d41e0fb6198 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea52be21a0e79f326f08af259d4aae6f = $(`<div id="html_ea52be21a0e79f326f08af259d4aae6f" style="width: 100.0%; height: 100.0%;"><b>대구자생한방병원</b><br>주소: 대구 중구 달구벌대로 2033<br>⭐ 정보 없음</div>`)[0];
+                popup_b893336bd539bec000306d41e0fb6198.setContent(html_ea52be21a0e79f326f08af259d4aae6f);
+            
+        
+
+        marker_a3e9db86ef0fd1f1660dcb5e139dde22.bindPopup(popup_b893336bd539bec000306d41e0fb6198)
+        ;
+
+        
+    
+    
+            var marker_3523c6271cd6a51626308bf4efb624d6 = L.marker(
+                [35.867008520811865, 128.5946497502287],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_104f30acdd986538e6febb96ae63938d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c633914404b1f6f995386aee59fd618e = $(`<div id="html_c633914404b1f6f995386aee59fd618e" style="width: 100.0%; height: 100.0%;"><b>리봄한방병원 대구점</b><br>주소: 대구 중구 동성로1길 15<br>⭐ 정보 없음</div>`)[0];
+                popup_104f30acdd986538e6febb96ae63938d.setContent(html_c633914404b1f6f995386aee59fd618e);
+            
+        
+
+        marker_3523c6271cd6a51626308bf4efb624d6.bindPopup(popup_104f30acdd986538e6febb96ae63938d)
+        ;
+
+        
+    
+    
+            var marker_d17044778139c244359db79064a2adb3 = L.marker(
+                [35.8692569716649, 128.601280036859],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_26f3a82c00cd6aa0335fb647556bc822 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_921116677eda2f0f3bfb4ee8b92f4055 = $(`<div id="html_921116677eda2f0f3bfb4ee8b92f4055" style="width: 100.0%; height: 100.0%;"><b>대구우리들병원</b><br>주소: 대구 중구 국채보상로 648<br>⭐ 정보 없음</div>`)[0];
+                popup_26f3a82c00cd6aa0335fb647556bc822.setContent(html_921116677eda2f0f3bfb4ee8b92f4055);
+            
+        
+
+        marker_d17044778139c244359db79064a2adb3.bindPopup(popup_26f3a82c00cd6aa0335fb647556bc822)
+        ;
+
+        
+    
+    
+            var marker_bb9e69a40c692d0b964bde22b24c315b = L.marker(
+                [35.8662655663843, 128.595020130386],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_d1476842ee1d533477f865a4b5711290 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ecfca679d9a2673e07c32a6f27b5313 = $(`<div id="html_6ecfca679d9a2673e07c32a6f27b5313" style="width: 100.0%; height: 100.0%;"><b>엣지성형외과</b><br>주소: 대구 중구 동성로1길 28<br>⭐ 정보 없음</div>`)[0];
+                popup_d1476842ee1d533477f865a4b5711290.setContent(html_6ecfca679d9a2673e07c32a6f27b5313);
+            
+        
+
+        marker_bb9e69a40c692d0b964bde22b24c315b.bindPopup(popup_d1476842ee1d533477f865a4b5711290)
+        ;
+
+        
+    
+    
+            var marker_72bc78f008e3d1113e94998d85a4f3b2 = L.marker(
+                [35.8690729668535, 128.593297243804],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_488e182787ca9a1584c3263a4700d3bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_45e5335e7ecfd3184782f0debd2b0284 = $(`<div id="html_45e5335e7ecfd3184782f0debd2b0284" style="width: 100.0%; height: 100.0%;"><b>블리비의원 대구동성로점</b><br>주소: 대구 중구 중앙대로 403<br>⭐ 정보 없음</div>`)[0];
+                popup_488e182787ca9a1584c3263a4700d3bd.setContent(html_45e5335e7ecfd3184782f0debd2b0284);
+            
+        
+
+        marker_72bc78f008e3d1113e94998d85a4f3b2.bindPopup(popup_488e182787ca9a1584c3263a4700d3bd)
+        ;
+
+        
+    
+    
+            var marker_194ec6aa5a6d46c9cf9272c234a1a83a = L.marker(
+                [35.869980397943884, 128.59431737938567],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_afd0b40c29b1cbdea96bf2c5b62b31e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2982ab8c90ed73833c585448ea19f980 = $(`<div id="html_2982ab8c90ed73833c585448ea19f980" style="width: 100.0%; height: 100.0%;"><b>대구중앙로센텀치과의원</b><br>주소: 대구 중구 중앙대로 412<br>⭐ 정보 없음</div>`)[0];
+                popup_afd0b40c29b1cbdea96bf2c5b62b31e6.setContent(html_2982ab8c90ed73833c585448ea19f980);
+            
+        
+
+        marker_194ec6aa5a6d46c9cf9272c234a1a83a.bindPopup(popup_afd0b40c29b1cbdea96bf2c5b62b31e6)
+        ;
+
+        
+    
+    
+            var marker_93b58f8091971fd54a73623aea488e62 = L.marker(
+                [35.86506677374961, 128.59279966591598],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_edd87941c324733e52aac3ec293d278a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c9f4bbb4d012460a6bd5a26fae0dcd3 = $(`<div id="html_0c9f4bbb4d012460a6bd5a26fae0dcd3" style="width: 100.0%; height: 100.0%;"><b>대구퍼스트치과의원</b><br>주소: 대구 중구 중앙대로 359<br>⭐ 정보 없음</div>`)[0];
+                popup_edd87941c324733e52aac3ec293d278a.setContent(html_0c9f4bbb4d012460a6bd5a26fae0dcd3);
+            
+        
+
+        marker_93b58f8091971fd54a73623aea488e62.bindPopup(popup_edd87941c324733e52aac3ec293d278a)
+        ;
+
+        
+    
+    
+            var marker_f2b09ef30844de77e95cc749be1585db = L.marker(
+                [35.87073988674746, 128.5886861082294],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_ba8ac9f9fd450000d0f0adfe83670801 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5221a746691ff192c4e6b924f2d66e55 = $(`<div id="html_5221a746691ff192c4e6b924f2d66e55" style="width: 100.0%; height: 100.0%;"><b>곽병원</b><br>주소: 대구 중구 국채보상로 531<br>⭐ 정보 없음</div>`)[0];
+                popup_ba8ac9f9fd450000d0f0adfe83670801.setContent(html_5221a746691ff192c4e6b924f2d66e55);
+            
+        
+
+        marker_f2b09ef30844de77e95cc749be1585db.bindPopup(popup_ba8ac9f9fd450000d0f0adfe83670801)
+        ;
+
+        
+    
+    
+            var marker_f98df5a59ee338788e0fbe9fcc82ca05 = L.marker(
+                [35.86949979790328, 128.58296179946402],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_623af0c662bc22a270080a923acf3639 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f52345b9ca2f04231b929301d2483de = $(`<div id="html_2f52345b9ca2f04231b929301d2483de" style="width: 100.0%; height: 100.0%;"><b>계명대학교 대구동산병원</b><br>주소: 대구 중구 달성로 56<br>⭐ 정보 없음</div>`)[0];
+                popup_623af0c662bc22a270080a923acf3639.setContent(html_2f52345b9ca2f04231b929301d2483de);
+            
+        
+
+        marker_f98df5a59ee338788e0fbe9fcc82ca05.bindPopup(popup_623af0c662bc22a270080a923acf3639)
+        ;
+
+        
+    
+    
+            var marker_a28ff04b9e30119ac07f5b4f4fd7a82f = L.marker(
+                [35.870037402966226, 128.58933636935143],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_bbc1db2ec39425003ce5949aaa1825ce = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b75f30b29ca48c9450bb59d590e872c7 = $(`<div id="html_b75f30b29ca48c9450bb59d590e872c7" style="width: 100.0%; height: 100.0%;"><b>으뜸병원</b><br>주소: 대구 중구 국채보상로 536<br>⭐ 정보 없음</div>`)[0];
+                popup_bbc1db2ec39425003ce5949aaa1825ce.setContent(html_b75f30b29ca48c9450bb59d590e872c7);
+            
+        
+
+        marker_a28ff04b9e30119ac07f5b4f4fd7a82f.bindPopup(popup_bbc1db2ec39425003ce5949aaa1825ce)
+        ;
+
+        
+    
+    
+            var marker_9e2833bd9ab29e6e7698c5ac76e63139 = L.marker(
+                [35.8705480114377, 128.586567615321],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_b635e1a59b6354bfb67ad3c5e22d2536 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ebf06f7cfc25dee9b5ed3392c157bf63 = $(`<div id="html_ebf06f7cfc25dee9b5ed3392c157bf63" style="width: 100.0%; height: 100.0%;"><b>로이스덕영치과병원</b><br>주소: 대구 중구 국채보상로 511<br>⭐ 정보 없음</div>`)[0];
+                popup_b635e1a59b6354bfb67ad3c5e22d2536.setContent(html_ebf06f7cfc25dee9b5ed3392c157bf63);
+            
+        
+
+        marker_9e2833bd9ab29e6e7698c5ac76e63139.bindPopup(popup_b635e1a59b6354bfb67ad3c5e22d2536)
+        ;
+
+        
+    
+    
+            var marker_f249a83c1be5f124b1944684659f9bbf = L.marker(
+                [35.869388068306165, 128.59508493433472],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_cf1dd54320fa7795a2cfa529817b4290 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_df4b22017fd2f9a651a5294904e145c8 = $(`<div id="html_df4b22017fd2f9a651a5294904e145c8" style="width: 100.0%; height: 100.0%;"><b>예쁨주의쁨의원 대구중앙로점</b><br>주소: 대구 중구 동성로 25<br>⭐ 정보 없음</div>`)[0];
+                popup_cf1dd54320fa7795a2cfa529817b4290.setContent(html_df4b22017fd2f9a651a5294904e145c8);
+            
+        
+
+        marker_f249a83c1be5f124b1944684659f9bbf.bindPopup(popup_cf1dd54320fa7795a2cfa529817b4290)
+        ;
+
+        
+    
+    
+            var marker_b70ee97f94b6c47ec1d2cebdcba26ceb = L.marker(
+                [35.86631656350222, 128.59280696696663],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_4e255e709ace0b2da36405abcfa38c2d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f1c92dc66bfe2723208edfcf7dfe4ebe = $(`<div id="html_f1c92dc66bfe2723208edfcf7dfe4ebe" style="width: 100.0%; height: 100.0%;"><b>대구차여성의원</b><br>주소: 대구 중구 달구벌대로 2095<br>⭐ 정보 없음</div>`)[0];
+                popup_4e255e709ace0b2da36405abcfa38c2d.setContent(html_f1c92dc66bfe2723208edfcf7dfe4ebe);
+            
+        
+
+        marker_b70ee97f94b6c47ec1d2cebdcba26ceb.bindPopup(popup_4e255e709ace0b2da36405abcfa38c2d)
+        ;
+
+        
+    
+    
+            var marker_a8b72580e0e4f7758697e4f040f99672 = L.marker(
+                [35.8704890177665, 128.595374935352],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_9cf1a264db2358d6ff61d23691820866 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8ce25627c7295f2c492a10bca6f12961 = $(`<div id="html_8ce25627c7295f2c492a10bca6f12961" style="width: 100.0%; height: 100.0%;"><b>대구동성로예쁨주의쁨의원</b><br>주소: 대구 중구 동성로 39<br>⭐ 정보 없음</div>`)[0];
+                popup_9cf1a264db2358d6ff61d23691820866.setContent(html_8ce25627c7295f2c492a10bca6f12961);
+            
+        
+
+        marker_a8b72580e0e4f7758697e4f040f99672.bindPopup(popup_9cf1a264db2358d6ff61d23691820866)
+        ;
+
+        
+    
+    
+            var marker_7b6577144617d68780c80fa99dca507b = L.marker(
+                [35.8701436922386, 128.59674530063194],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_cc5af3479883fb9eafffb53371778fee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3e6f1800c5a2ac9bd201c161ec3794cb = $(`<div id="html_3e6f1800c5a2ac9bd201c161ec3794cb" style="width: 100.0%; height: 100.0%;"><b>비엘성형외과의원</b><br>주소: 대구 중구 동성로2길 95<br>⭐ 정보 없음</div>`)[0];
+                popup_cc5af3479883fb9eafffb53371778fee.setContent(html_3e6f1800c5a2ac9bd201c161ec3794cb);
+            
+        
+
+        marker_7b6577144617d68780c80fa99dca507b.bindPopup(popup_cc5af3479883fb9eafffb53371778fee)
+        ;
+
+        
+    
+    
+            var marker_d08164901bfc31f9ecb7ef93ca4f7edb = L.marker(
+                [35.86656629756646, 128.58605645951067],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_2c5ae94987b893e9f383f66cda2a8aaf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ea9a276691fe42ab01990df9342b926 = $(`<div id="html_1ea9a276691fe42ab01990df9342b926" style="width: 100.0%; height: 100.0%;"><b>대구자생한방병원</b><br>주소: 대구 중구 달구벌대로 2033<br>⭐ 정보 없음</div>`)[0];
+                popup_2c5ae94987b893e9f383f66cda2a8aaf.setContent(html_1ea9a276691fe42ab01990df9342b926);
+            
+        
+
+        marker_d08164901bfc31f9ecb7ef93ca4f7edb.bindPopup(popup_2c5ae94987b893e9f383f66cda2a8aaf)
+        ;
+
+        
+    
+    
+            var marker_95b5a8c9d59716e8c922f06ef78e4303 = L.marker(
+                [35.867008520811865, 128.5946497502287],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_0f387f7c7cf1de69c32f62fa3e8c9b16 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c1a3879310310a90c5b28977928e890 = $(`<div id="html_7c1a3879310310a90c5b28977928e890" style="width: 100.0%; height: 100.0%;"><b>리봄한방병원 대구점</b><br>주소: 대구 중구 동성로1길 15<br>⭐ 정보 없음</div>`)[0];
+                popup_0f387f7c7cf1de69c32f62fa3e8c9b16.setContent(html_7c1a3879310310a90c5b28977928e890);
+            
+        
+
+        marker_95b5a8c9d59716e8c922f06ef78e4303.bindPopup(popup_0f387f7c7cf1de69c32f62fa3e8c9b16)
+        ;
+
+        
+    
+    
+            var marker_a58d8b86b4d92228c35caa4bc440e031 = L.marker(
+                [35.8692569716649, 128.601280036859],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_14bf4805d137270c15faf0c941dc510b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_272ae20d65ba9e12b7924808482a3ff4 = $(`<div id="html_272ae20d65ba9e12b7924808482a3ff4" style="width: 100.0%; height: 100.0%;"><b>대구우리들병원</b><br>주소: 대구 중구 국채보상로 648<br>⭐ 정보 없음</div>`)[0];
+                popup_14bf4805d137270c15faf0c941dc510b.setContent(html_272ae20d65ba9e12b7924808482a3ff4);
+            
+        
+
+        marker_a58d8b86b4d92228c35caa4bc440e031.bindPopup(popup_14bf4805d137270c15faf0c941dc510b)
+        ;
+
+        
+    
+    
+            var marker_e9be777f076f8edd53b68fda6583bbeb = L.marker(
+                [35.8662655663843, 128.595020130386],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_9b31c50ce51a954fd84e342b4d2fdd7c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f205e00b6dce473fcbd0c40869bb479f = $(`<div id="html_f205e00b6dce473fcbd0c40869bb479f" style="width: 100.0%; height: 100.0%;"><b>엣지성형외과</b><br>주소: 대구 중구 동성로1길 28<br>⭐ 정보 없음</div>`)[0];
+                popup_9b31c50ce51a954fd84e342b4d2fdd7c.setContent(html_f205e00b6dce473fcbd0c40869bb479f);
+            
+        
+
+        marker_e9be777f076f8edd53b68fda6583bbeb.bindPopup(popup_9b31c50ce51a954fd84e342b4d2fdd7c)
+        ;
+
+        
+    
+    
+            var marker_46823ded51e2e089fcfe50b9583b9946 = L.marker(
+                [35.8690729668535, 128.593297243804],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_cf7de6498e72fbd08d92b38a604db4cd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5a8a33b456c72a30e3b4469224d1968 = $(`<div id="html_a5a8a33b456c72a30e3b4469224d1968" style="width: 100.0%; height: 100.0%;"><b>블리비의원 대구동성로점</b><br>주소: 대구 중구 중앙대로 403<br>⭐ 정보 없음</div>`)[0];
+                popup_cf7de6498e72fbd08d92b38a604db4cd.setContent(html_a5a8a33b456c72a30e3b4469224d1968);
+            
+        
+
+        marker_46823ded51e2e089fcfe50b9583b9946.bindPopup(popup_cf7de6498e72fbd08d92b38a604db4cd)
+        ;
+
+        
+    
+    
+            var marker_8c9e1090086d700805b5dbbc8dfdb36e = L.marker(
+                [35.869980397943884, 128.59431737938567],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_247825e5f5e40eec903cc549b59e65df = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7269afef3c500bbeaa68977d4024b0c8 = $(`<div id="html_7269afef3c500bbeaa68977d4024b0c8" style="width: 100.0%; height: 100.0%;"><b>대구중앙로센텀치과의원</b><br>주소: 대구 중구 중앙대로 412<br>⭐ 정보 없음</div>`)[0];
+                popup_247825e5f5e40eec903cc549b59e65df.setContent(html_7269afef3c500bbeaa68977d4024b0c8);
+            
+        
+
+        marker_8c9e1090086d700805b5dbbc8dfdb36e.bindPopup(popup_247825e5f5e40eec903cc549b59e65df)
+        ;
+
+        
+    
+    
+            var marker_e6a2ac574ceb43a2c91d71d7d5c78252 = L.marker(
+                [35.86506677374961, 128.59279966591598],
+                {
+}
+            ).addTo(map_d9578533bbaac2ac7753d3330f90542d);
+        
+    
+        var popup_3764497cf23e6781d4417b5de46313ff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_55b06861c050eb7012620e8f74b1aa16 = $(`<div id="html_55b06861c050eb7012620e8f74b1aa16" style="width: 100.0%; height: 100.0%;"><b>대구퍼스트치과의원</b><br>주소: 대구 중구 중앙대로 359<br>⭐ 정보 없음</div>`)[0];
+                popup_3764497cf23e6781d4417b5de46313ff.setContent(html_55b06861c050eb7012620e8f74b1aa16);
+            
+        
+
+        marker_e6a2ac574ceb43a2c91d71d7d5c78252.bindPopup(popup_3764497cf23e6781d4417b5de46313ff)
+        ;
+
+        
+    
+</script>
+</html>
