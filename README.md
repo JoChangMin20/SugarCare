@@ -7,7 +7,7 @@
   - **Frontend:** HTML/CSS, React  
   - **Backend:** FastAPI(Python), Spring Boot(Java)  
   - **Database:** MySQL  
-  - **Tools:** IntelliJ, Jupyter Notebook, GitHub, Notion  
+  - **Tools:** STS, IntelliJ, Jupyter Notebook, MySQL Workbench, GitHub, Notion
 
 ## 주요 기능
 - 사용자의 혈당 데이터를 분석하여 **2시간 이후 혈당 변동 예측**
